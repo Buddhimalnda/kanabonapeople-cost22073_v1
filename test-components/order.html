@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Delicious+Handrawn&family=Kaushan+Script&family=Monoton&family=Shadows+Into+Light&display=swap"
+        rel="stylesheet">
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+</head>
+
+<body>
+    <div class="order">
+        <div class="col left">
+            <h1>Order </h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque id harum repellendus sequi, voluptate
+                perspiciatis itaque debitis necessitatibus molestiae veritatis modi sint adipisci nihil totam similique
+                repudiandae saepe veniam maiores!</p>
+            <label for="">
+                Total Order:
+            </label>
+            <div class="price">Rs.<span id="price">24.30</span></div>
+            <div class="count">
+                <div class="btn" onclick="addcount()">+</div>
+                <input type="number" id="count">
+                <div class="btn" onclick="lesscount()">-</div>
+            </div>
+            <div class="btn-buy">
+                <div class="icon"></div>
+                <label>Buy Now</label>
+            </div>
+        </div>
+        <div class="col right">
+            <div class="img">
+                <div class="cart">
+                    <i class="fa fa-angle-left  arrow"></i>
+                    <div class="card">
+                        <div class="img">
+                            <img src="https://cdn.discordapp.com/attachments/1089198968724017262/1090025374592811128/bugger.png"
+                                height="250px">
+                        </div>
+                        <div class="title"><span>Bugger</span>
+                            <div class="rating"><i class="fa fa-star"></i><span>3</span></div>
+                        </div>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet nostrum esse aperiam odio, ut,
+                        </p>
+                        <div class="time">
+
+                            <span>
+                                00:01:05
+                            </span>
+                        </div>
+                    </div>
+
+                    <i class="fa fa-angle-right arrow"></i>
+                </div>
+                <div class="list">
+                    <i class="fa-solid fa-o"></i>
+                    <i class="fa-solid fa-o"></i>
+                    <i class="fa-solid fa-o"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/d1c69586b9.js" crossorigin="anonymous"></script>
+    <script src="../assets/js/order.js"></script>
+</body>
+
+</html>
