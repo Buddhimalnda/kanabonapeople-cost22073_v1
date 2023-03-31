@@ -308,4 +308,13 @@ nav .right-nav .profile {
 }
 .recent-order:hover {
   background: #000;
+}
+
+.login {
+  display: flex;
+  width: 500px;
+  height: 200px;
+}
+.login .col {
+  background: #000;
 }/*# sourceMappingURL=style.css.map */
