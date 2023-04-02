@@ -1,0 +1,18 @@
+@media (max-width: 768px) {
+  .login .row {
+    display: block;
+  }
+  .login .row .col {
+    padding: 20px;
+  }
+  .login .row .col.l {
+    background-color: #f2f3f4;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .login .row .col.r {
+    background: #82d305;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+}/*# sourceMappingURL=sm.style.css.map */

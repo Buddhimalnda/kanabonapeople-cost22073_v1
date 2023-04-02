@@ -1,0 +1,26 @@
+$p: #82d305;
+$s: #f2f3f4;
+$light: #f2f3f4;
+
+//mobile view scss styles
+@media (max-width: 768px) {
+    .login{
+        .row{
+            display: block;
+            .col{
+                padding: 20px;
+                &.l{
+                  background-color: $light;
+                  border-top-left-radius: 0;
+                  border-bottom-left-radius: 0;
+                  
+                }
+                &.r{
+                  background: $p;
+                  border-top-right-radius: 0;
+                  border-bottom-right-radius: 0;
+                }
+            }
+        }
+    }
+}
