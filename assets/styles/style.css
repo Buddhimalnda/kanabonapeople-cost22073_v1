@@ -360,6 +360,10 @@ nav .right-nav .card-box .title i:hover {
   color: #82d305;
   background: #f2f3f4;
 }
+.login .row .col.r .btn:hover {
+  background-color: #D89216;
+  color: #fff;
+}
 .login .row .col h1 {
   text-align: center;
 }
@@ -401,6 +405,10 @@ nav .right-nav .card-box .title i:hover {
   color: #f2f3f4;
   background: #82d305;
 }
+.login .row .col .group .btn:hover {
+  background-color: #D89216;
+  color: #fff;
+}
 .login .row .col .group.social {
   display: flex;
   align-items: center;
@@ -432,11 +440,212 @@ nav .right-nav .card-box .title i:hover {
   text-transform: uppercase;
 }
 .login .row .col .group .social .icon.facebook {
-  background: #4267B2;
+  background: #4267b2;
 }
 .login .row .col .group .social .icon.twitter {
-  background: #1DA1F2;
+  background: #1da1f2;
 }
 .login .row .col .group .social .icon.google {
   background: #ea4335;
+}
+
+.sign-up {
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  width: 100%;
+  height: 100vh;
+  background-image: url(https://cdn.discordapp.com/attachments/1090881998039568467/1091961105506635827/coffee-3120750.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.sign-up .btn {
+  padding: 10px;
+  text-align: center;
+  font-weight: 600;
+  width: 100%;
+  border-radius: 33px;
+  box-shadow: 10px 10px 21px 0px rgba(0, 0, 0, 0.75);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.sign-up .btn:hover {
+  background-color: #D89216;
+  color: #fff;
+}
+.sign-up .row {
+  display: flex;
+  justify-content: center;
+  width: 1000px;
+  border-radius: 33px;
+  box-shadow: 10px 10px 21px 0px rgba(0, 0, 0, 0.75);
+}
+.sign-up .row .col {
+  padding: 20px;
+}
+.sign-up .row .col.l {
+  border-top-left-radius: 33px;
+  border-bottom-left-radius: 33px;
+  background: #82d305;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.sign-up .row .col.l .btn {
+  color: #82d305;
+  background: #f2f3f4;
+}
+.sign-up .row .col.l .btn:hover {
+  background-color: #D89216;
+  color: #fff;
+}
+.sign-up .row .col.r {
+  background-color: #f2f3f4;
+  border-top-right-radius: 33px;
+  border-bottom-right-radius: 33px;
+}
+.sign-up .row .col h1 {
+  text-align: center;
+}
+.sign-up .row .col p {
+  text-align: center;
+}
+.sign-up .row .col .group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.sign-up .row .col .group.input {
+  border-bottom: 1px solid #141414;
+}
+.sign-up .row .col .group.hr {
+  border-bottom: 1px solid #141414;
+  margin-top: -10px;
+}
+.sign-up .row .col .group label {
+  display: none;
+}
+.sign-up .row .col .group input {
+  background: none;
+  border: none !important;
+  outline: none;
+  margin-left: 10px;
+  width: 100%;
+}
+.sign-up .row .col .group .re-me {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sign-up .row .col .group .re-me span {
+  margin-left: 5px;
+}
+.sign-up .row .col .group .btn {
+  color: #f2f3f4;
+  background: #82d305;
+}
+.sign-up .row .col .group .btn:hover {
+  background-color: #D89216;
+  color: #fff;
+}
+.sign-up .row .col .group.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  place-items: center;
+  width: 100%;
+}
+.sign-up .row .col .group .social {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin-top: -10px;
+  margin-bottom: -10px;
+}
+.sign-up .row .col .group .social .icon {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 50%;
+  -webkit-box-shadow: 10px 10px 21px 0px rgba(0, 0, 0, 0.75);
+  color: #f2f3f4;
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+.sign-up .row .col .group .social .icon.facebook {
+  background: #4267b2;
+}
+.sign-up .row .col .group .social .icon.twitter {
+  background: #1da1f2;
+}
+.sign-up .row .col .group .social .icon.google {
+  background: #ea4335;
+}
+
+.forget-passwd {
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  width: 100%;
+  height: 100vh;
+  background-image: url(https://cdn.discordapp.com/attachments/1090881998039568467/1091961105506635827/coffee-3120750.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.forget-passwd .panel {
+  width: 1000px;
+  border-radius: 33px;
+  box-shadow: 10px 10px 21px 0px rgba(0, 0, 0, 0.75);
+  background: #82d305;
+}
+.forget-passwd .panel h1 {
+  text-align: center;
+}
+.forget-passwd .panel p {
+  text-align: center;
+}
+.forget-passwd .panel .group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 5px 20px;
+}
+.forget-passwd .panel .group.input {
+  border-bottom: 1px solid #141414;
+}
+.forget-passwd .panel .group label {
+  display: none;
+}
+.forget-passwd .panel .group input {
+  background: none;
+  border: none !important;
+  outline: none;
+  margin-left: 10px;
+  width: 100%;
+}
+.forget-passwd .panel .group .btn {
+  padding: 10px;
+  text-align: center;
+  font-weight: 600;
+  width: 100%;
+  border-radius: 33px;
+  box-shadow: 10px 10px 21px 0px rgba(0, 0, 0, 0.75);
+  text-transform: uppercase;
+  background-color: #f2f3f4;
+  cursor: pointer;
+}
+.forget-passwd .panel .group .btn:hover {
+  background-color: #D89216;
+  color: #141414;
 }/*# sourceMappingURL=style.css.map */
