@@ -1,8 +1,12 @@
 $p: #82d305;
-$s: #f2f3f4;
+$s: #D89216;
 $light: #f2f3f4;
+$dark: #141414;
+$facebook: #4267b2;
+$twitter: #1da1f2;
+$google: #ea4335;
 
-//mobile view scss styles
+//mobile view scss styles for login page
 @media (max-width: 768px) {
     .login{
         .row{
