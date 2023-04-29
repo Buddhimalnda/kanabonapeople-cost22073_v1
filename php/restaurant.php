@@ -71,4 +71,5 @@ public function getAllRestaurant()
     return $result;
 }
 
+
 ?>

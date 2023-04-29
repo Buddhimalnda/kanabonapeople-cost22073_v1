@@ -95,4 +95,28 @@
         }
     }
     
+    //auth session 
+    public function authSession($username)
+    {
+        $_SESSION['username'] = $username;
+        $_SESSION['login'] = true;
+    }
+    //logout session
+    public function logoutSession()
+    {
+        session_destroy();
+    }
+    //check session
+    public function checkSession()
+    {
+        if (isset($_SESSION['login'])) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
+
+    
 ?>
