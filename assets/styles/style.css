@@ -21,7 +21,7 @@
 }
 .order .col.right {
   width: 1500px;
-  background-image: url(https://cdn.discordapp.com/attachments/1089198968724017262/1090021860281946242/vintage-old-rustic-cutlery-dark_1.jpg);
+  background-image: url("https://cdn.discordapp.com/attachments/1089198968724017262/1090021860281946242/vintage-old-rustic-cutlery-dark_1.jpg");
   background-position: right;
   border-top-left-radius: 100%;
   border-bottom-left-radius: 100%;
@@ -155,6 +155,14 @@ nav .right-nav .card-box .title i:hover {
   background: #82d305;
   color: #f2f3f4;
 }
+<<<<<<< HEAD
+
+.categories-card {
+  position: relative;
+  width: 250px;
+  height: 200px;
+  background-color: #098b3d;
+=======
 .categories-card-body {
   display: flex;
   justify-content: center;
@@ -168,6 +176,7 @@ nav .right-nav .card-box .title i:hover {
   width: 375px;
   height: 250px;
   background-color: #44486e;
+>>>>>>> d46e07b253263874e3db1b6a46c31d9a1756d112
   border-radius: 20px;
   box-shadow: 0px 32px 60px 6px rgb(43, 43, 43);
 }
@@ -193,8 +202,13 @@ nav .right-nav .card-box .title i:hover {
      object-fit: scale-down;
   z-index: -1;
 }
+<<<<<<< HEAD
+.categories-card .image-card .edit-btn {
+  background-color: #098b3d;
+=======
 .categories-card .image-box .edit-btn {
   background-color: #44486e;
+>>>>>>> d46e07b253263874e3db1b6a46c31d9a1756d112
   border-radius: 50%;
   width: 35px;
   height: 35px;
@@ -238,7 +252,7 @@ nav .right-nav .card-box .title i:hover {
   line-height: 25px;
 }
 .profile-card .image-box .edit-btn {
-  background-color: #44486e;
+  background-color: #44486E;
   border-radius: 50%;
   width: 35px;
   height: 35px;
@@ -254,9 +268,10 @@ nav .right-nav .card-box .title i:hover {
   margin: 6px;
 }
 .profile-card .image-box .profile-img {
+  position: relative;
   text-align: center;
   width: 100%;
-  padding-top: 10px;
+  padding-top: 30px;
 }
 .profile-card .image-box .profile-img img {
   width: 100px;
@@ -272,14 +287,14 @@ nav .right-nav .card-box .title i:hover {
 }
 .profile-card .profile-data {
   width: 100%;
-  background-color: #f7f5ff;
+  background-color: #F7F5FF;
   border-radius: 25px;
-  margin-top: 10px;
+  margin-top: 40px;
   padding: 30px 0px;
 }
 .profile-card .profile-data .count-box {
   display: inline-flex;
-  margin-left: 30px;
+  margin: 5px 20px;
 }
 .profile-card .profile-data .count-box .count-img {
   width: 50px;
@@ -300,7 +315,7 @@ nav .right-nav .card-box .title i:hover {
   line-height: 20px;
 }
 .profile-card .profile-data .count-box .count-text p {
-  color: #44486e;
+  color: #44486E;
   font-size: 11px;
 }
 
@@ -317,10 +332,11 @@ nav .right-nav .card-box .title i:hover {
   place-items: center;
   width: 100%;
   height: 100vh;
-  background-image: url(https://cdn.discordapp.com/attachments/1090881998039568467/1091961105506635827/coffee-3120750.jpg);
+  background-image: url("https://cdn.discordapp.com/attachments/1090881998039568467/1091961105506635827/coffee-3120750.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .login .btn {
   padding: 10px;
@@ -369,6 +385,7 @@ nav .right-nav .card-box .title i:hover {
 }
 .login .row .col p {
   text-align: center;
+  margin-top: 30px;
 }
 .login .row .col .group {
   display: flex;
@@ -377,7 +394,7 @@ nav .right-nav .card-box .title i:hover {
   padding: 10px;
 }
 .login .row .col .group.input {
-  border-bottom: 1px solid #141414;
+  border-bottom: 1px solid #2ac761;
 }
 .login .row .col .group.hr {
   border-bottom: 1px solid #141414;
@@ -428,7 +445,6 @@ nav .right-nav .card-box .title i:hover {
   margin: 10px;
   padding: 10px;
   border-radius: 50%;
-  -webkit-box-shadow: 10px 10px 21px 0px rgba(0, 0, 0, 0.75);
   color: #f2f3f4;
   width: 20px;
   display: flex;
