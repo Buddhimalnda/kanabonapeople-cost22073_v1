@@ -1,0 +1,62 @@
+nav .left-nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: #eee;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  width: 250px;
+}
+nav .left-nav .logo {
+  display: flex;
+  justify-content: center;
+}
+nav .left-nav .link {
+  display: flex;
+  text-decoration: none;
+  color: #82d305;
+  padding: 7.5px;
+  border-radius: 33px;
+  margin: 5px 10px;
+  justify-items: center;
+  justify-content: center;
+  background: #f2f3f4;
+}
+nav .left-nav .link .text {
+  margin: 0 10px;
+}
+nav .left-nav .link:hover {
+  background: #82d305;
+  color: #f2f3f4;
+}
+nav .right-nav {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 300px;
+  background: #eee;
+  height: 100vh;
+}
+nav .right-nav .card-box {
+  padding: 5px;
+  background: #f2f3f4;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 33px;
+}
+nav .right-nav .card-box .title {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 15px;
+}
+nav .right-nav .card-box .title i {
+  display: block;
+  padding: 7.5px;
+  border-radius: 100%;
+}
+nav .right-nav .card-box .title i:hover {
+  background: #82d305;
+  color: #f2f3f4;
+}/*# sourceMappingURL=style.css.map */

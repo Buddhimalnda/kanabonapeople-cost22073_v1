@@ -155,70 +155,149 @@ nav .right-nav .card-box .title i:hover {
   background: #82d305;
   color: #f2f3f4;
 }
-<<<<<<< HEAD
 
 .categories-card {
   position: relative;
   width: 250px;
   height: 200px;
   background-color: #098b3d;
-=======
-.categories-card-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background: #dfe0ff;
-}
-
-.categories-card {
-  position: relative;
-  width: 375px;
-  height: 250px;
-  background-color: #44486e;
->>>>>>> d46e07b253263874e3db1b6a46c31d9a1756d112
   border-radius: 20px;
-  box-shadow: 0px 32px 60px 6px rgb(43, 43, 43);
+  box-shadow: 0px 25px 50px 6px rgba(37, 38, 37, 0.8);
 }
-.categories-card .image-box {
+.categories-card .image-card {
   position: absolute;
   left: 50%;
-  top: -150px;
+  top: -160px;
   transform: translateX(-50%);
-  width: 350px;
-  height: 265px;
-  background: #ffffff;
+  width: 200px;
+  height: 180px;
+  background: transparent;
   border: 0;
-  border-radius: 20px;
   padding: 15px;
 }
-.categories-card .image-box img {
+.categories-card .image-card img {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  -o-object-fit: scale-down;
-     object-fit: scale-down;
+  border-radius: 20px;
   z-index: -1;
 }
-<<<<<<< HEAD
 .categories-card .image-card .edit-btn {
   background-color: #098b3d;
-=======
-.categories-card .image-box .edit-btn {
-  background-color: #44486e;
->>>>>>> d46e07b253263874e3db1b6a46c31d9a1756d112
   border-radius: 50%;
   width: 35px;
   height: 35px;
   float: right;
   text-align: center;
 }
-.categories-card .image-box .edit-btn img {
+.categories-card .image-card .edit-btn i {
+  color: #fff;
+  margin-top: 10px;
+}
+.categories-card .content {
+  position: absolute;
+  width: 210px;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 25%;
+  padding: 20px;
+  line-height: 50px;
+}
+.categories-card .content h1 {
+  color: #ffffff;
+  font-size: 17px;
+}
+.categories-card .content .price {
+  display: inline-flex;
+  color: #ffffff;
+  width: 100%;
+  justify-content: space-between;
+}
+.categories-card .categories-card-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #dfe0ff;
+}
+.categories-card .profile-card {
+  background-color: #ffffff;
+  border: 3px solid #9892c5;
+  border-radius: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 15px;
+}
+.categories-card .profile-card .image-box {
+  width: 100%;
+  line-height: 25px;
+}
+.categories-card .profile-card .image-box .edit-btn {
+  background-color: #44486E;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  float: right;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.categories-card .profile-card .image-box .edit-btn img {
   position: relative;
   width: 60%;
-  z-index: 0;
+  height: 60%;
+  margin: 6px;
+}
+.categories-card .profile-card .profile-img {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  padding-top: 30px;
+}
+.categories-card .profile-card .profile-img img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-left: 35px;
+}
+.categories-card .profile-card .profile-img h1 {
+  font-size: 23px;
+  color: #333238;
+}
+.categories-card .profile-data {
+  width: 100%;
+  background-color: #F7F5FF;
+  border-radius: 25px;
+  margin-top: 40px;
+  padding: 30px 0px;
+}
+.categories-card .profile-data .count-box {
+  display: inline-flex;
+  margin: 5px 20px;
+}
+.categories-card .profile-data .count-box .count-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  text-align: center;
+}
+.categories-card .profile-data .count-box .count-img img {
+  width: 75%;
+  height: 75%;
+  margin-top: 8px;
+}
+.categories-card .profile-data .count-box .count-text {
+  position: relative;
+  margin-left: 10px;
+  margin-top: 10px;
+  line-height: 20px;
+}
+.categories-card .profile-data .count-box .count-text p {
+  color: #44486E;
+  font-size: 11px;
 }
 .categories-card .content {
   position: absolute;
@@ -252,7 +331,7 @@ nav .right-nav .card-box .title i:hover {
   line-height: 25px;
 }
 .profile-card .image-box .edit-btn {
-  background-color: #44486E;
+  background-color: #44486e;
   border-radius: 50%;
   width: 35px;
   height: 35px;
@@ -268,10 +347,9 @@ nav .right-nav .card-box .title i:hover {
   margin: 6px;
 }
 .profile-card .image-box .profile-img {
-  position: relative;
   text-align: center;
   width: 100%;
-  padding-top: 30px;
+  padding-top: 10px;
 }
 .profile-card .image-box .profile-img img {
   width: 100px;
@@ -287,14 +365,14 @@ nav .right-nav .card-box .title i:hover {
 }
 .profile-card .profile-data {
   width: 100%;
-  background-color: #F7F5FF;
+  background-color: #f7f5ff;
   border-radius: 25px;
-  margin-top: 40px;
+  margin-top: 10px;
   padding: 30px 0px;
 }
 .profile-card .profile-data .count-box {
   display: inline-flex;
-  margin: 5px 20px;
+  margin-left: 30px;
 }
 .profile-card .profile-data .count-box .count-img {
   width: 50px;
@@ -315,7 +393,7 @@ nav .right-nav .card-box .title i:hover {
   line-height: 20px;
 }
 .profile-card .profile-data .count-box .count-text p {
-  color: #44486E;
+  color: #44486e;
   font-size: 11px;
 }
 
@@ -324,287 +402,6 @@ nav .right-nav .card-box .title i:hover {
 }
 .recent-order:hover {
   background: #000;
-}
-
-.login {
-  display: flex;
-  justify-content: center;
-  place-items: center;
-  width: 100%;
-  height: 100vh;
-  background-image: url("https://cdn.discordapp.com/attachments/1090881998039568467/1091961105506635827/coffee-3120750.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  font-family: Arial, Helvetica, sans-serif;
-}
-.login .btn {
-  padding: 10px;
-  text-align: center;
-  font-weight: 600;
-  width: 100%;
-  border-radius: 33px;
-  box-shadow: 10px 10px 21px 0px rgba(0, 0, 0, 0.75);
-  text-transform: uppercase;
-  cursor: pointer;
-}
-.login .row {
-  display: flex;
-  justify-content: center;
-  width: 1000px;
-  border-radius: 33px;
-  box-shadow: 10px 10px 21px 0px rgba(0, 0, 0, 0.75);
-}
-.login .row .col {
-  padding: 20px;
-}
-.login .row .col.l {
-  background-color: #f2f3f4;
-  border-top-left-radius: 33px;
-  border-bottom-left-radius: 33px;
-}
-.login .row .col.r {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
-  background: #82d305;
-  border-top-right-radius: 33px;
-  border-bottom-right-radius: 33px;
-}
-.login .row .col.r .btn {
-  color: #82d305;
-  background: #f2f3f4;
-}
-.login .row .col.r .btn:hover {
-  background-color: #d89216;
-  color: #fff;
-}
-.login .row .col h1 {
-  text-align: center;
-}
-.login .row .col p {
-  text-align: center;
-  margin-top: 30px;
-}
-.login .row .col .group {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-}
-.login .row .col .group.input {
-  border-bottom: 1px solid #2ac761;
-}
-.login .row .col .group.hr {
-  border-bottom: 1px solid #141414;
-  margin-top: -10px;
-}
-.login .row .col .group label {
-  display: none;
-}
-.login .row .col .group input {
-  background: none;
-  border: none !important;
-  outline: none;
-  margin-left: 10px;
-  width: 100%;
-}
-.login .row .col .group .re-me {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.login .row .col .group .re-me span {
-  margin-left: 5px;
-}
-.login .row .col .group .btn {
-  color: #f2f3f4;
-  background: #82d305;
-}
-.login .row .col .group .btn:hover {
-  background-color: #d89216;
-  color: #fff;
-}
-.login .row .col .group.social {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  place-items: center;
-  width: 100%;
-}
-.login .row .col .group .social {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px;
-  margin-top: -10px;
-  margin-bottom: -10px;
-}
-.login .row .col .group .social .icon {
-  margin: 10px;
-  padding: 10px;
-  border-radius: 50%;
-  color: #f2f3f4;
-  width: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 20px;
-  font-weight: bold;
-  text-align: center;
-  text-transform: uppercase;
-}
-.login .row .col .group .social .icon.facebook {
-  background: #4267b2;
-}
-.login .row .col .group .social .icon.twitter {
-  background: #1da1f2;
-}
-.login .row .col .group .social .icon.google {
-  background: #ea4335;
-}
-
-.sign-up {
-  display: flex;
-  justify-content: center;
-  place-items: center;
-  width: 100%;
-  height: 100vh;
-  background-image: url(https://cdn.discordapp.com/attachments/1090881998039568467/1091961105506635827/coffee-3120750.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.sign-up .btn {
-  padding: 10px;
-  text-align: center;
-  font-weight: 600;
-  width: 100%;
-  border-radius: 33px;
-  box-shadow: 10px 10px 21px 0px rgba(0, 0, 0, 0.75);
-  text-transform: uppercase;
-  cursor: pointer;
-}
-.sign-up .btn:hover {
-  background-color: #d89216;
-  color: #fff;
-}
-.sign-up .row {
-  display: flex;
-  justify-content: center;
-  width: 1000px;
-  border-radius: 33px;
-  box-shadow: 10px 10px 21px 0px rgba(0, 0, 0, 0.75);
-}
-.sign-up .row .col {
-  padding: 20px;
-}
-.sign-up .row .col.l {
-  border-top-left-radius: 33px;
-  border-bottom-left-radius: 33px;
-  background: #82d305;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
-}
-.sign-up .row .col.l .btn {
-  color: #82d305;
-  background: #f2f3f4;
-}
-.sign-up .row .col.l .btn:hover {
-  background-color: #d89216;
-  color: #fff;
-}
-.sign-up .row .col.r {
-  background-color: #f2f3f4;
-  border-top-right-radius: 33px;
-  border-bottom-right-radius: 33px;
-}
-.sign-up .row .col h1 {
-  text-align: center;
-}
-.sign-up .row .col p {
-  text-align: center;
-}
-.sign-up .row .col .group {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-}
-.sign-up .row .col .group.input {
-  border-bottom: 1px solid #141414;
-}
-.sign-up .row .col .group.hr {
-  border-bottom: 1px solid #141414;
-  margin-top: -10px;
-}
-.sign-up .row .col .group label {
-  display: none;
-}
-.sign-up .row .col .group input {
-  background: none;
-  border: none !important;
-  outline: none;
-  margin-left: 10px;
-  width: 100%;
-}
-.sign-up .row .col .group .re-me {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.sign-up .row .col .group .re-me span {
-  margin-left: 5px;
-}
-.sign-up .row .col .group .btn {
-  color: #f2f3f4;
-  background: #82d305;
-}
-.sign-up .row .col .group .btn:hover {
-  background-color: #d89216;
-  color: #fff;
-}
-.sign-up .row .col .group.social {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  place-items: center;
-  width: 100%;
-}
-.sign-up .row .col .group .social {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px;
-  margin-top: -10px;
-  margin-bottom: -10px;
-}
-.sign-up .row .col .group .social .icon {
-  margin: 10px;
-  padding: 10px;
-  border-radius: 50%;
-  -webkit-box-shadow: 10px 10px 21px 0px rgba(0, 0, 0, 0.75);
-  color: #f2f3f4;
-  width: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 20px;
-  font-weight: bold;
-  text-align: center;
-  text-transform: uppercase;
-}
-.sign-up .row .col .group .social .icon.facebook {
-  background: #4267b2;
-}
-.sign-up .row .col .group .social .icon.twitter {
-  background: #1da1f2;
-}
-.sign-up .row .col .group .social .icon.google {
-  background: #ea4335;
 }
 
 .forget-passwd {

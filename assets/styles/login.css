@@ -1,0 +1,138 @@
+.login {
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://cdn.discordapp.com/attachments/1090881998039568467/1091961105506635827/coffee-3120750.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.login .btn {
+  padding: 10px;
+  text-align: center;
+  font-weight: 600;
+  width: 100%;
+  border-radius: 33px;
+  box-shadow: 10px 10px 21px 0px rgba(0, 0, 0, 0.75);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.login .row {
+  display: flex;
+  justify-content: center;
+  width: 1000px;
+  border-radius: 33px;
+  box-shadow: 10px 10px 21px 0px rgba(0, 0, 0, 0.75);
+}
+.login .row .col {
+  padding: 20px;
+}
+.login .row .col.l {
+  background-color: #f2f3f4;
+  border-top-left-radius: 33px;
+  border-bottom-left-radius: 33px;
+}
+.login .row .col.r {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background: #82d305;
+  border-top-right-radius: 33px;
+  border-bottom-right-radius: 33px;
+}
+.login .row .col.r .btn {
+  color: #82d305;
+  background: #f2f3f4;
+}
+.login .row .col.r .btn:hover {
+  background-color: #d89216;
+  color: #fff;
+}
+.login .row .col h1 {
+  text-align: center;
+}
+.login .row .col p {
+  text-align: center;
+  margin-top: 30px;
+}
+.login .row .col .group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.login .row .col .group.input {
+  border-bottom: 1px solid #2ac761;
+}
+.login .row .col .group.hr {
+  border-bottom: 1px solid #141414;
+  margin-top: -10px;
+}
+.login .row .col .group label {
+  display: none;
+}
+.login .row .col .group input {
+  background: none;
+  border: none !important;
+  outline: none;
+  margin-left: 10px;
+  width: 100%;
+}
+.login .row .col .group .re-me {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login .row .col .group .re-me span {
+  margin-left: 5px;
+}
+.login .row .col .group .btn {
+  color: #f2f3f4;
+  background: #82d305;
+}
+.login .row .col .group .btn:hover {
+  background-color: #d89216;
+  color: #fff;
+}
+.login .row .col .group.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  place-items: center;
+  width: 100%;
+}
+.login .row .col .group .social {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin-top: -10px;
+  margin-bottom: -10px;
+}
+.login .row .col .group .social .icon {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 50%;
+  color: #f2f3f4;
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+.login .row .col .group .social .icon.facebook {
+  background: #4267b2;
+}
+.login .row .col .group .social .icon.twitter {
+  background: #1da1f2;
+}
+.login .row .col .group .social .icon.google {
+  background: #ea4335;
+}/*# sourceMappingURL=login.css.map */

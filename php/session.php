@@ -1,8 +1,9 @@
 <?php 
 session_start();
-if(!isset($_SESSION['username'])){
-    header('location:login.php');
+if(!isset($_SESSION['login'])){
+    header('location: pages/login.php');
 }
+// echo $_SESSION['username'];
 // if(isset($_SESSION['food_id'])){
 //     $foodID = $_SESSION['food_id'];
 // }else{

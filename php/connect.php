@@ -9,10 +9,10 @@ class DB_CONNECT
         $this->connect();
     }
     //destructor
-    function __destruct()
-    {
-        $this->close();
-    }
+    // function __destruct()
+    // {
+    //     $this->close();
+    // }
     //connect function
     function connect()
     {
