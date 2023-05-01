@@ -79,6 +79,9 @@ $db = new DB_CONNECT();
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
                             </div>
+                            <div class="add-cart">
+                                <button><i class="fa fa-cart-shopping"></i> order</button>
+                            </div>
                         </div>
                     </div>
                     <?php
@@ -111,6 +114,7 @@ $db = new DB_CONNECT();
                 </article>
             </div>
         </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126770.62564551206!2d79.96009356499802!3d6.820578095527442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25b1097b2d5a1%3A0x6d72bfb938a8f677!2sMount%20Lavinia%20Beach!5e0!3m2!1sen!2ssg!4v1682943132727!5m2!1sen!2ssg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
     <script src="https://kit.fontawesome.com/d1c69586b9.js" crossorigin="anonymous"></script>
 </body>
