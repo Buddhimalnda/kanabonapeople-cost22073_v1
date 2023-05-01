@@ -1,10 +1,10 @@
 <?php
-include 'php/db_config.php';
-include 'php/connect.php';
+// include 'php/db_config.php';
+// include 'php/connect.php';
 include 'php/classes/user.php';
 $db = new DB_CONNECT();
 $name = $_SESSION['username'];
-echo "<script>console.log('$name');</script>";
+// echo "<script>console.log('$name');</script>";
 $user = new User($db->connect(), $name);
 $auth = false;
 if($_SESSION['login']){

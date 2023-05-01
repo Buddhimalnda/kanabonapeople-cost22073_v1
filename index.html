@@ -1,12 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="assets/styles/style.css" />
+  </head>
+  <body class="home">
+    <div class="container">
+      <div class="search-bar">
+        <form action="search.php" method="GET">
+          <i class="fa fa-search"></i>
+          <input type="text" name="search" placeholder="Search for a product" />
+          <!-- <button type="submit" name="submit-search"></button> -->
+        </form>
+        <!-- <div class="list-search hidden">
+                <ul>
+                    <li><a href="search.php?search=iphone"> <div class="text">
+                        <h3>iphone</h3>
+                        <p>hint</p>
+                    </div></a></li>
+                    </ul>
+            </div> -->
+      </div>
+      <div class="hr"></div>
+      <div class="foods">
+        <h1>Foods List</h1>
+        <div class="catagory-list">
+            <div class="card">
+              <div class="card__image">
+                <img
+                  src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                  alt="Salad"
+                />
+              </div>
+              <div class="card__info">
+                <div class="car__info--title">
+                  <h3>Salad</h3>
+                  <p>Fresh & sweet</p>
+                </div>
+                <div class="card__info--price">
+                  <p>$ 5</p>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/d1c69586b9.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

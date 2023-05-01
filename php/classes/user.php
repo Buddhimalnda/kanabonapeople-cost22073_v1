@@ -195,7 +195,7 @@ public function login($username, $password)
     public function updatePassword($email, $password)
     {
         $sql = "UPDATE user SET password = '$password' WHERE email = '$email'";
-        $result = mysqli_query($this->con, $sql);
+        $result = mysqli_query($this->db, $sql);
         if ($result) {
             return true;
         }
