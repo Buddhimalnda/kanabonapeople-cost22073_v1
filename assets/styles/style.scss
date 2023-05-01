@@ -709,9 +709,10 @@ nav {
 }
 
 .resturent{
+  margin: auto auto;
   .resturent-list{
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto;
     // background-color: #2196F3;
     padding: 10px;
   }
@@ -802,9 +803,10 @@ article.card {
 	border-radius:$border-radius;
 	box-shadow:$box-shadow;
 	overflow:hidden;
+  margin: 10px;
 	.thumb {
 		@include size(auto, $thumb-height);
-		background: url($new-york-city) no-repeat center;
+		// background: url($new-york-city) no-repeat center;
 		background-size:cover;
 		border-radius:$border-radius;
 	}
@@ -828,7 +830,7 @@ article.card {
 			@include pos(absolute, $top:50%, $right: 0);
 			transform:translateY(-50%);
 			@include size(35px, 23px);
-			background:url($flag) no-repeat top right;
+			// background:url($flag) no-repeat top right;
 			background-size:100% auto;
 			display:inline-block;
 		}
@@ -855,6 +857,9 @@ article.card {
 			opacity:0;
 			transition:$timing-2 $transition;
 		}
+    a{
+      text-decoration: none;
+    }
 		.details {
 			@include pos(absolute, $left:0, $bottom:0);
 			margin: 10px 0;

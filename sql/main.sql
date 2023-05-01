@@ -1,4 +1,5 @@
 CREATE TABLE `restaurant` ( `id` INT NOT NULL AUTO_INCREMENT , `name` VARCHAR(255) NOT NULL , `address` VARCHAR(255) NOT NULL , `description` VARCHAR(255) NOT NULL , `image` VARCHAR(255) NOT NULL , `metadata` VARCHAR(255) NOT NULL , PRIMARY KEY (`id`));
+
 -- sample data
 INSERT INTO `restaurant` (`id`, `name`, `address`, `description`, `image`, `metadata`) VALUES (NULL, 'Restaurant 1', 'Address 1', 'Description 1', 'Image 1', 'Metadata 1');
 INSERT INTO `restaurant` (`id`, `name`, `address`, `description`, `image`, `metadata`) VALUES (NULL, 'Restaurant 2', 'Address 2', 'Description 2', 'Image 2', 'Metadata 2');

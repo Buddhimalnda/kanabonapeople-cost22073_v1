@@ -11,8 +11,11 @@ class Restaurant {
     private $metadata;
     private $db;
     //constructor
-    public function __construct($db) {
+    public function __construct($db,$resturentId) {
         $this->db = $db;
+        if ($resturentId) {
+            $this->getRestaurant($resturentId);
+        }
     }
     //methods
     //getters
@@ -62,7 +65,7 @@ class Restaurant {
 public function addRestaurant($name, $address, $description, $image, $metadata)
 {
     $sql = "INSERT INTO restaurant (name, address, description, image, metadata) VALUES ('$name', '$address', '$description', '$image', '$metadata')";
-    $result = mysqli_query($this->con, $sql);
+    $result = mysqli_query($this->db, $sql);
     if ($result) {
         return true;
     }
@@ -71,24 +74,34 @@ public function addRestaurant($name, $address, $description, $image, $metadata)
     }
 }
 //mysql get restaurant function
-public function getRestaurant($name)
+public function getRestaurant($id)
 {
-    $sql = "SELECT * FROM restaurant WHERE name = '$name'";
-    $result = mysqli_query($this->con, $sql);
-    $row = mysqli_fetch_array($result);
-    $data = $row[0];
-    if ($data > 1) {
-        return true;
-    }
-    else {
-        return false;
-    }
+    $sql = "SELECT * FROM restaurant WHERE id = '$id'";
+        $result = mysqli_query($this->db, $sql);
+        $row = mysqli_fetch_assoc($result);
+        // $data = $row[0];
+        if ($row > 0) {
+            $id = $row["id"];
+
+            echo "<script>console.log('$id');</script>";
+
+            $this->setId($row["id"]);
+            $this->setName($row["name"]);
+            $this->setAddress($row["address"]);
+            $this->setDescription($row["description"]);
+            $this->setImage($row["image"]);
+            $this->setMetadata($row["metadata"]);
+            return $row;
+        } else {
+            return null;
+        }
+
 }
 //mysql search restaurant function
 public function searchRestaurant($name)
 {
     $sql = "SELECT * FROM restaurant WHERE name = '$name'";
-    $result = mysqli_query($this->con, $sql);
+    $result = mysqli_query($this->db, $sql);
     $row = mysqli_fetch_array($result);
     $data = $row[0];
     if ($data > 1) {
@@ -97,12 +110,14 @@ public function searchRestaurant($name)
     else {
         return false;
     }
+
+    
 }
 //mysql delete restaurant function
 public function deleteRestaurant($name)
 {
     $sql = "DELETE FROM restaurant WHERE name = '$name'";
-    $result = mysqli_query($this->con, $sql);
+    $result = mysqli_query($this->db, $sql);
     if ($result) {
         return true;
     }
@@ -125,9 +140,26 @@ public function updateRestaurant($name, $address, $description, $image, $metadat
 //mysql get all restaurant function
 public function getAllRestaurant()
 {
+    // $sql = "SELECT * FROM restaurant";
+    // $result = mysqli_query($this->con, $sql);
+    // return $result;
+
+    $resturents = array();
     $sql = "SELECT * FROM restaurant";
-    $result = mysqli_query($this->con, $sql);
-    return $result;
+    $result = mysqli_query($this->db, $sql);
+    // $row = mysqli_fetch_array($result);
+
+    if (mysqli_num_rows($result) > 0) {
+        // output data of each row
+        $i=0;
+        while ($row = mysqli_fetch_assoc($result)) {
+            $resturents[$i++] = new Food($this->db, $row["id"]);
+        }
+        return $resturents;
+    } else {
+        print("error");
+        return $resturents;
+    }
 }
 
 

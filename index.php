@@ -5,6 +5,7 @@ $title = "Home";
 include "php/session.php";
 include "php/connect.php";
 include "php/classes/food.php";
+include "php/classes/resturant.php";
 $db = new DB_CONNECT();
 ?>
 
@@ -94,27 +95,39 @@ $db = new DB_CONNECT();
         <div class="resturent">
             <h1>Resturent List</h1>
             <div class="resturent-list">
+            <?php
+                $r = new Restaurant($db->connect(), false);
+                $resturents = $r->getAllRestaurant();
+                for ($i = 0; $i < count($resturents); $i++) {
+                ?>
                 <article class="card">
-                    <div class="thumb">
-                    </div>
+                <?php
+                    $resturent = new Restaurant($db->connect(), $resturents[$i]->getId());
+                    $img = $resturent->getImage();
+                    echo "<div class='thumb' style='background: url($img) no-repeat center;'></div>";
+                ?>
                     <div class="infos">
-                        <h2 class="title">new york city <span class="flag"></span></h2>
-                        <h3 class="date">november 2 - 4</h3>
+                        <h2 class="title"><?php echo $resturent->getName(); ?><span class="flag"></span></h2>
                         <h3 class="seats">seats remaining: 2</h3>
-                        <p class="txt">
-                            | Join us for our Live Infinity Session in
-                            | beautiful New York City. This is a 3 day
-                            | intensive workshop where you'll learn
-                            | how to become a better version of...
-                        </p>
-                        <h3 class="details">
-                            event details
-                        </h3>
+                        <p class="txt"> 
+                            <!-- <?php echo $resturent->getDescription() ?> -->
+                            <h3 class="date"><?php echo $resturent->getAddress();?></h3>
+                        </p> 
+                        <?php 
+                        $id = $resturent->getId();
+                        echo "<a class='details' href='pages/resturent.php?id=$id' target='_blank' rel='noopener noreferrer'> " ?>
+                            <h3 class="">
+                                More details
+                            </h3>
+                        </a>
                     </div>
                 </article>
+                <?php
+                }
+                ?>
             </div>
         </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126770.62564551206!2d79.96009356499802!3d6.820578095527442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25b1097b2d5a1%3A0x6d72bfb938a8f677!2sMount%20Lavinia%20Beach!5e0!3m2!1sen!2ssg!4v1682943132727!5m2!1sen!2ssg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+       
     </div>
     <script src="https://kit.fontawesome.com/d1c69586b9.js" crossorigin="anonymous"></script>
 </body>
