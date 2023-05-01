@@ -1,6 +1,6 @@
 <?php
     $title = "signup";
-    include_once '../../php/session.php';
+    // include_once '../../php/session.php';
     include_once '../../php/connect.php';
     include_once '../../php/classes/user.php';
 
@@ -9,7 +9,7 @@
     $email = $_POST['email'];
     $phone = $_POST['number'];
     $db = new DB_CONNECT();
-    $user = new User($db-> connect());
+    $user = new User($db-> connect(),false);
 
     
 if($user->register($username, $password, $email, $phone)){
