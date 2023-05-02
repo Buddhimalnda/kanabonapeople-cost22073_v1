@@ -64,4 +64,8 @@
 .food-order .panel .page .list .card .end button:hover {
   cursor: pointer;
   background: #d89216;
+}
+
+.hidden {
+  display: none;
 }/*# sourceMappingURL=food.order.style.css.map */

@@ -1,69 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="../assets/styles/food.order.style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../assets/styles/food.order.style.css" />
+  </head>
+  <body>
     <div class="food-order">
-        <div class="panel">
-            <div class="page page-1">
-                <h1>Selete Resturant</h1>
-                <div class="list">
-                    <div class="card">
-                        <div class="img">
-                            <img src="https://cdn.discordapp.com/attachments/1102564090020384869/1102697450738827294/112518656.jpg" alt="">
-                        </div>
-                        <div class="body">
-                            <h3>Resturant Name</h3>
-                            <p>Resturant Description</p>
-                        </div>
-                        <div class="end">
-                            <button name="order">Order</button>
-                        </div>
-                    </div>
+      <div class="panel">
+        <div class="page page-1 hidden">
+          <h1>Selete Resturant</h1>
+          <div class="list">
+            <div class="card">
+              <div class="img">
+                <img
+                  src="https://cdn.discordapp.com/attachments/1102564090020384869/1102697450738827294/112518656.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="body">
+                <h3>Resturant Name</h3>
+                <p>Resturant Description</p>
+              </div>
+              <div class="end">
+                <button name="order" type="button">Order</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="page page-2 hidden">
+          <form action="" method="post">
+            <h1>Food Order</h1>
+            <div class="group">
+              <label>count: </label>
+              <button onclick="addcount()" type="button">+</button>
+              <input type="number" name="count" id="count" value="1" />
+              <button onclick="lesscount()" type="button">-</button>
+            </div>
+            <div class="group">
+              <label>Order Description: </label><br />
+              <textarea name="" id="" cols="30" rows="10"></textarea>
+            </div>
+            <div class="group">
+              <label>Order type: </label><br />
+              <select name="payment_method">
+                <option value="takeway">Take way</option>
+                <option value="takeway">meet at the door</option>
+                <option value="dinin-">Din in</option>
+              </select>
+            </div>
+            <div class="group">
+              <label>Payment Method: </label><br />
+              <select name="payment_method">
+                <option value="cash">cash</option>
+                <option value="card">Credit or debit card</option>
+              </select>
+            </div>
+            <div class="group">
+              <input type="button" value="Next" />
+            </div>
+          </form>
+        </div>
+        <div class="page page-3">
+          <form action="" method="post">
+            <div class="take-way">
+              <h2>Take way details</h2>
+              <div class="group">
+                <label>date: </label>
+                <input type="date" name="takeway_date" id="" />
+              </div>
+              <div class="group">
+                <label>time: </label>
+                <input type="time" name="takeway_time" id="" />
+              </div>
+            </div>
+            <div class="din-in">
+              <h2>Din In details</h2>
+              <div class="group">
+                <label>Seat count: </label>
+                <button onclick="addcountSeat()" type="button">+</button>
+                <input type="number" name="count_seat" id="count_seat" value="1" />
+                <button onclick="lesscountSeat()" type="button">-</button>
+              </div>
+              <div class="group">
+                <label>Seat table: </label>
+                <button onclick="addcountTable()" type="button">+</button>
+                <input type="number" name="count_table" id="count_table" value="1" />
+                <button onclick="lesscountTable()" type="button">-</button>
+              </div>
+              <div class="group">
+                <label>date: </label>
+                <input type="date" name="takeway_date" id="" />
+              </div>
+              <div class="group">
+                <label>time: </label>
+                <input type="time" name="takeway_time" id="" />
+              </div>
+            </div>
+            <div class="meet-at-door">
+                <h2>Meet At Door</h2>
+                <div class="group">
+                    <label>Telephone number: same number of account : (check this) </label>
+                    <input type="checkbox" value="same_number_of_account"> 
+                    <input type="text" name="tele_number" id="" />
+                </div>
+                <div class="group">
+                    <label>address: </label>
+                    <input type="text" name="address" id="" />
                 </div>
             </div>
-            <div class="page page-2">
-                <form action="" method="post">
-                    <h1>Food Order</h1>
-                    <div class="group">
-                        <label>count: </label>
-                        <button onclick="addcount()" type="button">+</button>
-                        <input type="number" name="count" id="count" value="1">
-                        <button onclick="lesscount()" type="button">-</button>
-                    </div>
-                    <div class="group">
-                        <label>Order Description: </label><br>
-                        <textarea name="" id="" cols="30" rows="10"></textarea>
-                    </div>
-                    <div class="group">
-                        <label>Payment Method: </label><br>
-                        <select name="payment_method">
-                            <option value="cash">cash</option>
-                            <option value="card">Credit or debit card</option>
-                        </select>
-                        </div>
-                    <div class="group">
-                        <input type="submit" value="Next">
-                    </div>
-                </form>
+            <div class="group">
+                <button type="button">next</button>
             </div>
-            <div class="page page-3">
-                <form action="" method="post">
-                    <div class="bill"></div>
-                </form>
-            </div>
-            <div class="page page-4">
-                <form action="" method="post">
-                    <div class="bill"></div>
-                </form>
-            </div>
+          </form>
         </div>
+        <div class="page page-4">
+          <form action="" method="post">
+            <div class="bill"></div>
+            <div class="group">
+                <button>Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
     <script src="../assets/js/order.js"></script>
-</body>
+  </body>
 </html>
