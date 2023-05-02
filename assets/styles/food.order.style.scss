@@ -1,0 +1,89 @@
+$p: #82d305;
+$s: #d89216;
+$light: #f2f3f4;
+$bg_color: #098b3d;
+$facebook: #4267b2;
+$twitter: #1da1f2;
+$google: #ea4335;
+$dark: #141414;
+$facebook: #4267b2;
+$twitter: #1da1f2;
+$google: #ea4335;
+
+.food-order {
+  background: #00000069;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  .panel {
+    background: $light;
+    height: 600px;
+    width: 400px;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    -webkit-box-shadow: 10px 10px 31px -3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 31px -3px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 31px -3px rgba(0, 0, 0, 0.75);
+
+    .page{
+        .list{
+            .card{
+                margin-bottom: 10px;
+                border-radius: 33px;
+                border: 1px solid #00000069;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                &:hover{
+                    background: #00000069;
+                    cursor: pointer;
+                        border: $p solid 1px;
+                        color: $light;
+                }
+                .img{
+                    margin-left: 15px;
+                    img{
+                        width: 75px;
+                        height: 75px;
+                        border-radius: 50%;
+                        border: $p solid 2px;
+                    }
+                }
+                .body{
+                    h3{
+                        font-size: 20px;
+                        font-weight: bold;
+                    }
+                    p{
+                        font-size: 15px;
+                    }
+                }
+                .end{
+                    margin-right: 15px;
+                    button{
+                        background: $p;
+                        border: none;
+                        padding: 10px 20px;
+                        border-radius: 10px;
+                        color: #fff;
+                        font-weight: bold;
+                        font-size: 15px;
+                        &:hover{
+                            cursor: pointer;
+                            background: $s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+  }
+}

@@ -81,7 +81,12 @@ $db = new DB_CONNECT();
                                 <span class="fa fa-star checked"></span>
                             </div>
                             <div class="add-cart">
-                                <button><i class="fa fa-cart-shopping"></i> order</button>
+                                <?php echo "<button onClick={myFunction()} ><i class='fa fa-cart-shopping'></i></i> order</button>" ?>
+                                <script>
+                                    function myFunction() {
+                                        location.href = './test-components/food-order.html';
+                                    }
+                                </script>
                             </div>
                         </div>
                     </div>
