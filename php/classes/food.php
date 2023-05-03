@@ -95,6 +95,30 @@ class Food
             return false;
         }
     }
+    public function addFoodWithThis()
+    {
+        $name = $this->getName();
+        $price = $this->getPrice();
+        $description = $this->getDescription();
+        $image = $this->getImage();
+        $metadata = $this->getMetadata();
+        
+        $sql = "INSERT INTO food (name, price, description, image, metadata) VALUES ('$name', '$price', '$description', '$image', '$metadata')";
+        $result = mysqli_query($this->db, $sql);
+        if ($result) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    public function setFood($name, $price, $description, $image, $metadata)
+    {
+        $this->setName($name);
+        $this->setPrice($price);
+        $this->setDescription($description);
+        $this->setImage($image);
+        $this->setMetadata($metadata);
+    }
     //mysql get food function
     public function getFood($id)
     {

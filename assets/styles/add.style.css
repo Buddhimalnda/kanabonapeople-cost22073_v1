@@ -1,0 +1,71 @@
+.container {
+  margin: 0 250px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .panel {
+  width: 600px;
+  height: 600px;
+  padding: 5px;
+  background: #82d305;
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+  box-shadow: 10px 10px 31px -3px rgba(0, 0, 0, 0.75);
+}
+.container .panel .group {
+  margin: 5px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  color: #f2f3f4;
+}
+.container .panel .group.inp {
+  padding: 10px 0px;
+  border-bottom: 1px solid #f2f3f4;
+}
+.container .panel .group input, .container .panel .group textarea {
+  background: none;
+  border: none !important;
+  outline: none;
+  margin: 5px 0;
+  width: 100%;
+  color: #f2f3f4;
+}
+.container .panel .group.btn {
+  display: flex;
+  flex-direction: row !important;
+  justify-content: center;
+  align-items: center;
+}
+.container .panel .group.btn button {
+  margin: 0 10px;
+  color: #f2f3f4;
+  background: #82d305;
+  outline: none;
+  border: none;
+  padding: 10px;
+  text-align: center;
+  font-weight: 600;
+  width: 150px;
+  margin-top: 10px;
+  border-radius: 33px;
+  box-shadow: 10px 10px 21px 0px rgba(0, 0, 0, 0.75);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.container .panel .group.btn button:hover {
+  background-color: #d89216;
+  color: #fff;
+}
+.container .panel .group.btn button.reset {
+  background: #ea4335;
+}
+.container .panel .group.btn button.reset:hover {
+  background: #d62516;
+}
+.container .panel .group h1 {
+  text-align: center;
+}/*# sourceMappingURL=add.style.css.map */

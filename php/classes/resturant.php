@@ -73,6 +73,30 @@ public function addRestaurant($name, $address, $description, $image, $metadata)
         return false;
     }
 }
+public function setRestaurant($name, $address, $description, $image, $metadata)
+{
+    $this->setName($name);
+    $this->setAddress($address);
+    $this->setDescription($description);
+    $this->setMetadata($metadata);
+    
+}
+public function addRestaurantWithThis()
+    {
+        $name = $this->getName();
+        $address = $this->getAddress();
+        $description = $this->getDescription();
+        $image = $this->getImage();
+        $metadata = $this->getMetadata();
+        
+        $sql = "INSERT INTO restaurant (name, address, description, image, metadata) VALUES ('$name', '$address', '$description', '$image', '$metadata')";
+        $result = mysqli_query($this->db, $sql);
+        if ($result) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 //mysql get restaurant function
 public function getRestaurant($id)
 {

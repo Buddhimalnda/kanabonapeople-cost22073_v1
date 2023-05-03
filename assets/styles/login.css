@@ -19,6 +19,7 @@
   box-shadow: 10px 10px 21px 0px rgba(0, 0, 0, 0.75);
   text-transform: uppercase;
   cursor: pointer;
+  border: none;
 }
 .login .row {
   display: flex;
