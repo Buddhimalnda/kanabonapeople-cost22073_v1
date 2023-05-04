@@ -9,7 +9,14 @@ $dark: #141414;
 $facebook: #4267b2;
 $twitter: #1da1f2;
 $google: #ea4335;
+a.nomal{
+  text-decoration: none !important;
+  color: $p;
 
+  &:hover{
+    color: $light;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -218,13 +225,18 @@ nav {
     height: 140px;
   }
   .card__image > img {
-    max-width: 100%;
+    width: 100%;
     border-bottom-right-radius: 30px;
     transform: rotate(10deg) translate(-15px, -55px);
     position: absolute;
     height: 200px;
     object-fit: cover;
     object-position: center;
+
+    &:hover{
+      transform: rotate(0deg) translate(0px, 0px);
+      transition: all 0.5s ease-out;
+    }
   }
 
   .card__info {
@@ -722,28 +734,31 @@ nav {
     height: $height;
   }
 
-  a[href] {
-    position: relative;
-    &,
-    &:link,
-    &:visited,
-    &:active {
-      text-decoration: none;
-      color: lighten($maroon-flush, 5);
-      text-shadow: 2px 2px 2px darken($big-stone, 10);
-      padding-bottom: 3px;
-      font-weight: bold;
-    }
-    &::after {
-      content: "";
-      @include pos(absolute, $left: 0, $bottom: 0);
-      background: $white;
-      @include size(0, 1px);
-      transition: 0.35s $transition;
-    }
-    &:hover::after {
-      width: 100%;
-      box-shadow: $box-shadow;
+  .food-list{
+
+    a[href] {
+      position: relative;
+      &,
+      &:link,
+      &:visited,
+      &:active {
+        text-decoration: none;
+        color: lighten($maroon-flush, 5);
+        text-shadow: 2px 2px 2px darken($big-stone, 10);
+        padding-bottom: 3px;
+        font-weight: bold;
+      }
+      &::after {
+        content: "";
+        @include pos(absolute, $left: 0, $bottom: 0);
+        background: $white;
+        @include size(0, 1px);
+        transition: 0.35s $transition;
+      }
+      &:hover::after {
+        width: 100%;
+        box-shadow: $box-shadow;
+      }
     }
   }
 

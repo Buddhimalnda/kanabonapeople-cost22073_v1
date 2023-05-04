@@ -5,10 +5,10 @@
         if ($user->getType() === 'admin') {
             echo "
                 <div class='icons'>
-                    <a href='pages/admin/addResturant.htm'>
+                    <a class='nomal' href='pages/admin/addResturant.htm'>
                         <i class='fa fa-pen-to-square'></i>
                     </a>
-                    <a href=''>
+                    <a class='nomal' href=''>
                         <i class='fa-solid fa-eye'></i>
                     </a>
                 </div>

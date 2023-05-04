@@ -1,3 +1,11 @@
+a.nomal {
+  text-decoration: none !important;
+  color: #82d305;
+}
+a.nomal:hover {
+  color: #f2f3f4;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -181,7 +189,7 @@ nav .right-nav .card-box .title i:hover {
   height: 140px;
 }
 .foods .food-list .card__image > img {
-  max-width: 100%;
+  width: 100%;
   border-bottom-right-radius: 30px;
   transform: rotate(10deg) translate(-15px, -55px);
   position: absolute;
@@ -190,6 +198,10 @@ nav .right-nav .card-box .title i:hover {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+}
+.foods .food-list .card__image > img:hover {
+  transform: rotate(0deg) translate(0px, 0px);
+  transition: all 0.5s ease-out;
 }
 .foods .food-list .card__info {
   margin-top: 20px;
@@ -584,17 +596,17 @@ nav .right-nav .card-box .title i:hover {
   src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/397014/BrandonGrotesque-Black.eot"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/397014/BrandonGrotesque-Black.ttf"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/397014/BrandonGrotesque-Black.woff");
   font-weight: bold;
 }
-.resturent a[href] {
+.resturent .food-list a[href] {
   position: relative;
 }
-.resturent a[href], .resturent a[href]:link, .resturent a[href]:visited, .resturent a[href]:active {
+.resturent .food-list a[href], .resturent .food-list a[href]:link, .resturent .food-list a[href]:visited, .resturent .food-list a[href]:active {
   text-decoration: none;
   color: #d8276c;
   text-shadow: 2px 2px 2px #070c11;
   padding-bottom: 3px;
   font-weight: bold;
 }
-.resturent a[href]::after {
+.resturent .food-list a[href]::after {
   content: "";
   position: absolute;
   left: 0;
@@ -605,7 +617,7 @@ nav .right-nav .card-box .title i:hover {
   height: 1px;
   transition: 0.35s cubic-bezier(0.17, 0.67, 0.5, 1.03);
 }
-.resturent a[href]:hover::after {
+.resturent .food-list a[href]:hover::after {
   width: 100%;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
 }
