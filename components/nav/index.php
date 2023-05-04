@@ -41,23 +41,23 @@ if($_SESSION['login']){
         <div class="footer">
             <?php
                 if(!$auth){
-?>
-<div class="non-auth">
-    <a href="" class="link">
-        <div class="icon">
-            <i class="fa fa-right-to-bracket"></i>
+            ?>
+        <div class="non-auth">
+            <a href="" class="link">
+                <div class="icon">
+                    <i class="fa fa-right-to-bracket"></i>
+                </div>
+                <div class="text">Sign in</div>
+            </a>
+            <a href="" class="link">
+                <div class="icon">
+                    <i class="fa-sharp fa fa-user-plus"></i>
+                </div>
+                <div class="text">Sign Up</div>
+            </a>
         </div>
-        <div class="text">Sign in</div>
-    </a>
-    <a href="" class="link">
-        <div class="icon">
-            <i class="fa-sharp fa fa-user-plus"></i>
-        </div>
-        <div class="text">Sign Up</div>
-    </a>
-</div>
 
-<?php
+        <?php
                 }else{
                     ?>
                     
@@ -105,26 +105,10 @@ if($_SESSION['login']){
                         </div>
                     </div>
                     <div class="profile-data">
-                        <div class="count-box">
-                            <div class="count-img">
-                                <img src="https://cdn.discordapp.com/attachments/1090881998039568467/1090884078808612945/icon2.png"
-                                    alt="">
-                            </div>
-                            <div class="count-text">
-                                <h3>14,765</h3>
-                                <p>Product Sales</p>
-                            </div>
-                        </div>
-                        <div class="count-box">
-                            <div class="count-img">
-                                <img src="https://cdn.discordapp.com/attachments/1090881998039568467/1090884077231558696/icon3.png"
-                                    alt="">
-                            </div>
-                            <div class="count-text">
-                                <h3>30bil+</h3>
-                                <p>Earning</p>
-                            </div>
-                        </div>
+                        <p>Email : </p>
+                        <h5><?php echo $user->getEmail() ?></h5>
+                        <p>Tel No : </p>
+                        <h5><?php echo $user->getNumber() ?></h5>
                     </div>
                 </div>
             </div>

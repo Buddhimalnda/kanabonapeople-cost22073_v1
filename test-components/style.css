@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #dfe9f5;
+}
+
+.left-nav {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  background: #fff;
+  width: 250px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+.left-nav ul li {
+  list-style: none;
+}
+.left-nav .logo {
+  text-align: center;
+  display: flex;
+  transition: all 0.5s ease;
+  margin-bottom: 10px;
+}
+.left-nav .logo img {
+  width: 75px;
+  height: 75px;
+}
+.left-nav .logo span {
+  font-weight: bold;
+  padding: 16px;
+  font-size: 18px;
+  color: rgb(10, 10, 10);
+}
+.left-nav .logo:hover {
+  background: #fff;
+}
+.left-nav a {
+  color: rgb(33, 197, 66);
+  width: 250px;
+  font-size: 14px;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+}
+.left-nav a i {
+  position: relative;
+  top: 9px;
+  left: 15px;
+  width: 70px;
+  height: 40px;
+  font-size: 20px;
+  text-align: center;
+}
+.left-nav a .nav-item {
+  position: relative;
+  margin-left: 30px;
+}
+.left-nav a:hover {
+  background: #01bb1d;
+  color: #fff;
+}
+.left-nav footer {
+  position: absolute;
+  bottom: 0;
+}
+.left-nav footer a {
+  color: red;
+}/*# sourceMappingURL=style.css.map */

@@ -230,102 +230,75 @@ nav .right-nav .card-box .title i:hover {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
 }
-.food-list .profile-card {
-  background-color: #ffffff;
-  border: 3px solid #9892c5;
-  border-radius: 30px;
-  font-family: Arial, Helvetica, sans-serif;
+
+.categories-card {
+  position: relative;
+  width: 220px;
+  height: 180px;
+  background-color: #098b3d;
+  border-radius: 20px;
+  box-shadow: 0px 25px 50px 6px rgba(42, 42, 42, 0.6);
+  margin-top: 180px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.categories-card .image-card {
+  position: absolute;
+  left: 50%;
+  top: -150px;
+  transform: translateX(-50%);
+  width: 170px;
+  height: 170px;
+  background: transparent;
+  border: 0;
   padding: 15px;
 }
-.food-list .profile-card .image-box {
+.categories-card .image-card img {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  line-height: 25px;
+  height: 100%;
+  border-radius: 20px;
+  z-index: -1;
 }
-.food-list .profile-card .image-box .edit-btn {
-  background-color: #f2f3f4;
+.categories-card .image-card .edit-btn {
+  background-color: #098b3d;
   border-radius: 50%;
   width: 35px;
   height: 35px;
   float: right;
   display: flex;
+  justify-content: center;
   align-items: center;
-  text-align: center;
 }
-.food-list .profile-card .image-box .edit-btn img {
+.categories-card .image-card .edit-btn img {
   position: relative;
   width: 60%;
   height: 60%;
-  margin: 6px;
+  z-index: 1;
 }
-.food-list .profile-card .profile-img {
-  position: relative;
-  text-align: center;
-  width: 100%;
-  padding-top: 30px;
-}
-.food-list .profile-card .profile-img img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  margin-left: 35px;
-}
-.food-list .profile-card .profile-img h1 {
-  font-size: 23px;
-  color: #333238;
-}
-.food-list .profile-data {
-  width: 100%;
-  background-color: #f7f5ff;
-  border-radius: 25px;
-  margin-top: 40px;
-  padding: 30px 0px;
-}
-.food-list .profile-data .count-box {
-  display: inline-flex;
-  margin: 5px 20px;
-}
-.food-list .profile-data .count-box .count-img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: #ffffff;
-  text-align: center;
-}
-.food-list .profile-data .count-box .count-img img {
-  width: 75%;
-  height: 75%;
-  margin-top: 8px;
-}
-.food-list .profile-data .count-box .count-text {
-  position: relative;
-  margin-left: 10px;
-  margin-top: 10px;
-  line-height: 20px;
-}
-.food-list .profile-data .count-box .count-text p {
-  color: #44486e;
-  font-size: 11px;
-}
-.food-list .content {
+.categories-card .content {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 180px;
+  height: 85px;
   font-family: Arial, Helvetica, sans-serif;
-  margin-top: 25%;
-  padding: 25px;
-  line-height: 50px;
+  margin-top: 20%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
-.food-list .content h1 {
+.categories-card .content h1 {
   color: #ffffff;
   font-size: 17px;
 }
-.food-list .content .price {
-  display: inline-flex;
+.categories-card .content .price {
+  display: flex;
   color: #ffffff;
   width: 100%;
   justify-content: space-between;
+  align-items: center;
 }
 
 .profile-card {
@@ -333,36 +306,35 @@ nav .right-nav .card-box .title i:hover {
   border: 3px solid #9892c5;
   border-radius: 30px;
   font-family: Arial, Helvetica, sans-serif;
-  padding: 15px;
+  padding: 7.5px;
 }
 .profile-card .image-box {
   width: 100%;
   line-height: 25px;
 }
 .profile-card .image-box .edit-btn {
-  background-color: #44486e;
+  background-color: #44486E;
   border-radius: 50%;
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
   float: right;
   display: flex;
   align-items: center;
-  text-align: center;
+  justify-content: center;
 }
 .profile-card .image-box .edit-btn img {
   position: relative;
   width: 60%;
-  height: 60%;
-  margin: 6px;
 }
 .profile-card .image-box .profile-img {
+  position: relative;
   text-align: center;
   width: 100%;
-  padding-top: 10px;
+  padding-top: 5px;
 }
 .profile-card .image-box .profile-img img {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -374,36 +346,18 @@ nav .right-nav .card-box .title i:hover {
 }
 .profile-card .profile-data {
   width: 100%;
-  background-color: #f7f5ff;
-  border-radius: 25px;
-  margin-top: 10px;
-  padding: 30px 0px;
-}
-.profile-card .profile-data .count-box {
-  display: inline-flex;
-  margin-left: 30px;
-}
-.profile-card .profile-data .count-box .count-img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: #ffffff;
+  background-color: #F7F5FF;
+  border-radius: 15px;
+  padding: 5px 0px;
+  justify-content: center;
   text-align: center;
 }
-.profile-card .profile-data .count-box .count-img img {
-  width: 75%;
-  height: 75%;
-  margin-top: 8px;
+.profile-card .profile-data p {
+  margin: 12px 0px 5px 0px;
+  font-size: 14px;
 }
-.profile-card .profile-data .count-box .count-text {
-  position: relative;
-  margin-left: 10px;
-  margin-top: 10px;
-  line-height: 20px;
-}
-.profile-card .profile-data .count-box .count-text p {
-  color: #44486e;
-  font-size: 11px;
+.profile-card .profile-data h5 {
+  font-weight: 600;
 }
 
 .recent-order .card {
@@ -599,12 +553,9 @@ nav .right-nav .card-box .title i:hover {
   margin-top: 20px;
 }
 
-.resturent {
-  margin: auto auto;
-}
 .resturent .resturent-list {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto auto auto;
   padding: 10px;
 }
 @font-face {
@@ -648,11 +599,11 @@ nav .right-nav .card-box .title i:hover {
   border-radius: 3px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
   overflow: hidden;
-  margin: 10px;
 }
 .resturent article.card .thumb {
   width: auto;
   height: 260px;
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/397014/new-york-city.png") no-repeat center;
   background-size: cover;
   border-radius: 3px;
 }
@@ -681,6 +632,7 @@ nav .right-nav .card-box .title i:hover {
   transform: translateY(-50%);
   width: 35px;
   height: 23px;
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/397014/flag.png") no-repeat top right;
   background-size: 100% auto;
   display: inline-block;
 }
@@ -706,9 +658,6 @@ nav .right-nav .card-box .title i:hover {
   color: rgba(21, 37, 54, 0.7);
   opacity: 0;
   transition: 0.5s 0.25s cubic-bezier(0.17, 0.67, 0.5, 1.03);
-}
-.resturent article.card .infos a {
-  text-decoration: none;
 }
 .resturent article.card .infos .details {
   position: absolute;
