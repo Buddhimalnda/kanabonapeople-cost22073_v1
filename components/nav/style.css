@@ -7,7 +7,7 @@ nav .left-nav {
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
-  width: 250px;
+  width: 12.5%;
 }
 nav .left-nav .logo {
   display: flex;
@@ -35,7 +35,7 @@ nav .right-nav {
   position: fixed;
   right: 0;
   top: 0;
-  width: 300px;
+  width: 12.5%;
   background: #eee;
   height: 100vh;
 }

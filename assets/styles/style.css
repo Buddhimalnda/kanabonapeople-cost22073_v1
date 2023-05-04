@@ -102,7 +102,7 @@ nav .left-nav {
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
-  width: 250px;
+  width: 15%;
 }
 nav .left-nav .logo {
   display: flex;
@@ -130,7 +130,7 @@ nav .right-nav {
   position: fixed;
   right: 0;
   top: 0;
-  width: 300px;
+  width: 20%;
   background: #eee;
   height: 100vh;
 }
@@ -156,12 +156,18 @@ nav .right-nav .card-box .title i:hover {
   color: #f2f3f4;
 }
 
-.food-list {
+.foods .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 30px;
+}
+.foods .food-list {
   display: grid;
   grid-template-columns: auto auto auto;
   padding: 10px;
 }
-.food-list .card {
+.foods .food-list .card {
   width: 295px;
   overflow: hidden;
   border-radius: 25px;
@@ -170,11 +176,11 @@ nav .right-nav .card-box .title i:hover {
   box-shadow: 5px 5px 15px 5px rgb(230, 230, 250);
   background: #f2f3f4;
 }
-.food-list .card__image {
+.foods .food-list .card__image {
   position: relative;
   height: 140px;
 }
-.food-list .card__image > img {
+.foods .food-list .card__image > img {
   max-width: 100%;
   border-bottom-right-radius: 30px;
   transform: rotate(10deg) translate(-15px, -55px);
@@ -185,25 +191,25 @@ nav .right-nav .card-box .title i:hover {
   -o-object-position: center;
      object-position: center;
 }
-.food-list .card__info {
+.foods .food-list .card__info {
   margin-top: 20px;
   align-items: flex-end;
   justify-content: space-between;
   padding: 0px 30px 20px 30px;
 }
-.food-list .card__info h3 {
+.foods .food-list .card__info h3 {
   font-size: 18px;
   font-weight: 700;
 }
-.food-list .card__info p {
+.foods .food-list .card__info p {
   font-size: 14px;
   text-align: left;
 }
-.food-list .card__info--price {
+.foods .food-list .card__info--price {
   text-align: right;
   color: orangered;
 }
-.food-list .rect2 {
+.foods .food-list .rect2 {
   position: relative;
   bottom: 315px;
   right: 15px;
@@ -216,17 +222,17 @@ nav .right-nav .card-box .title i:hover {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.food-list .checked {
+.foods .food-list .checked {
   color: #ffd700;
 }
-.food-list ::-webkit-scrollbar {
+.foods .food-list ::-webkit-scrollbar {
   width: 8px;
 }
-.food-list ::-webkit-scrollbar-thumb {
+.foods .food-list ::-webkit-scrollbar-thumb {
   background: #cccccc;
   border-radius: 10px;
 }
-.food-list ::-webkit-scrollbar-track {
+.foods .food-list ::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
 }
@@ -313,7 +319,7 @@ nav .right-nav .card-box .title i:hover {
   line-height: 25px;
 }
 .profile-card .image-box .edit-btn {
-  background-color: #44486E;
+  background-color: #44486e;
   border-radius: 50%;
   width: 30px;
   height: 30px;
@@ -346,7 +352,7 @@ nav .right-nav .card-box .title i:hover {
 }
 .profile-card .profile-data {
   width: 100%;
-  background-color: #F7F5FF;
+  background-color: #f7f5ff;
   border-radius: 15px;
   padding: 5px 0px;
   justify-content: center;
@@ -524,7 +530,10 @@ nav .right-nav .card-box .title i:hover {
 }
 
 .home .container {
-  margin: 0 250px;
+  position: relative;
+  left: 12.5%;
+  margin: 0 40px;
+  width: 65%;
 }
 .home .container .search-bar {
   padding: 10px;
@@ -535,14 +544,15 @@ nav .right-nav .card-box .title i:hover {
   justify-content: center;
   place-items: center;
   margin: 0 20px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 5px;
 }
 .home .container .search-bar form input {
   width: 100%;
   padding: 10px;
-  border-radius: 10px;
   border: none;
   outline: none;
-  background: #fff;
   font-size: 16px;
   color: #000;
 }
@@ -553,6 +563,12 @@ nav .right-nav .card-box .title i:hover {
   margin-top: 20px;
 }
 
+.resturent .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 30px;
+}
 .resturent .resturent-list {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -594,11 +610,12 @@ nav .right-nav .card-box .title i:hover {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
 }
 .resturent article.card {
-  width: 350px;
+  width: 300px;
   height: 350px;
   border-radius: 3px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
   overflow: hidden;
+  margin: 20px 10px;
 }
 .resturent article.card .thumb {
   width: auto;
@@ -611,7 +628,7 @@ nav .right-nav .card-box .title i:hover {
   width: auto;
   height: 350px;
   position: relative;
-  padding: 14px 24px;
+  padding: 10px 24px;
   background: #fff;
   transition: 0.4s 0.15s cubic-bezier(0.17, 0.67, 0.5, 1.03);
 }
@@ -636,7 +653,8 @@ nav .right-nav .card-box .title i:hover {
   background-size: 100% auto;
   display: inline-block;
 }
-.resturent article.card .infos .date, .resturent article.card .infos .seats {
+.resturent article.card .infos .date,
+.resturent article.card .infos .seats {
   margin-bottom: 10px;
   text-transform: uppercase;
   font-size: 0.85rem;
@@ -678,6 +696,8 @@ nav .right-nav .card-box .title i:hover {
 .resturent article.card:hover .infos {
   transform: translateY(-260px);
 }
-.resturent article.card:hover .infos .seats, .resturent article.card:hover .infos .txt, .resturent article.card:hover .infos .details {
+.resturent article.card:hover .infos .seats,
+.resturent article.card:hover .infos .txt,
+.resturent article.card:hover .infos .details {
   opacity: 1;
 }/*# sourceMappingURL=style.css.map */

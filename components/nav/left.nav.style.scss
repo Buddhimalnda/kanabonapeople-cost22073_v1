@@ -8,9 +8,7 @@
     font-family: "Poppins", sans-serif;
 }
 
-body{
-    background: #dfe9f5;
-}
+
 .left-nav{
     position: absolute;
     top: 0;
@@ -18,7 +16,7 @@ body{
     height: 100%;
     left: 0;
     background: #fff;
-    width: 250px;
+    // width: 250px;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -31,6 +29,7 @@ body{
     .logo{
         text-align: center;
         display: flex;
+        justify-content: space-between;
         transition: all 0.5s ease;
         margin-bottom: 10px;
 
@@ -42,9 +41,10 @@ body{
 
         span{
             font-weight: bold;
-            padding: 16px;
+            padding: 5px;
             font-size: 18px;
             color: rgb(10, 10, 10);
+            margin-right: 15px;
             
         }
 
@@ -89,8 +89,21 @@ body{
         position: absolute;
         bottom: 0;
         
-        a{
-            color: red;
+        form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+            width: 100%;
+
+            button{
+                padding: 10px;
+                border-radius: 5px;
+                border: 1px solid rgb(33, 197, 66);
+                background: rgb(33, 197, 66);
+                color: #fff;
+                cursor: pointer;
+            }
         }
     }
 

@@ -13,7 +13,7 @@ if($_SESSION['login']){
 
 ?>
 <nav>
-    <div class="left-nav">
+    <!-- <div class="left-nav">
         <div class="logo">
             <img src="https://cdn.discordapp.com/attachments/1089198968724017262/1090833612959658014/logo.png"
                 alt="logo" width="100" />
@@ -80,7 +80,9 @@ if($_SESSION['login']){
                 }
             ?>
         </div>
-    </div>
+    </div> -->
+    <?php require 'left_nav.php';?>
+    
     <div class="right-nav ">
         <div class="profile card-box">
             <div class="title">

@@ -30,7 +30,8 @@
                 ?>
                 <div class="infos">
                     <h2 class="title">
-                        <?php echo $resturent->getName(); ?><span class="flag"></span>
+                        <?php echo $resturent->getName(); ?>
+                        <!-- <span class="flag"></span> -->
                     </h2>
                     <h3 class="seats">seats remaining: 2</h3>
                     <p class="txt">

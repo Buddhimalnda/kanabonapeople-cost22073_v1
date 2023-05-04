@@ -16,6 +16,7 @@ $db = new DB_CONNECT();
     <title>Home</title>
     <!-- <link rel="stylesheet" href="../assets/styles/login.css"> -->
     <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="stylesheet" href="./components/nav/left.nav.style.css">
 </head>
 
 <body class="home">
