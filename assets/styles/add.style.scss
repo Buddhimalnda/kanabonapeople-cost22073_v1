@@ -1,0 +1,93 @@
+$p: #82d305;
+$s: #d89216;
+$light: #f2f3f4;
+$bg_color: #098b3d;
+$facebook: #4267b2;
+$twitter: #1da1f2;
+$google: #ea4335;
+$dark: #141414;
+$facebook: #4267b2;
+$twitter: #1da1f2;
+$google: #ea4335;
+
+.container{
+    margin: 0 250px;
+    height: 100vh;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+    .panel{
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        width: 600px;
+        height: 600px;
+        padding: 5px;
+        background: $p;
+        border-radius: 10px;
+        padding: 20px;
+        position: relative;
+        -webkit-box-shadow: 10px 10px 31px -3px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 10px 10px 31px -3px rgba(0, 0, 0, 0.75);
+        box-shadow: 10px 10px 31px -3px rgba(0, 0, 0, 0.75);
+    
+        .group{
+            margin: 5px 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            color: $light;
+            // align-items: center;
+            &.inp{
+                padding: 10px 0px;
+                border-bottom: 1px solid $light;
+            }
+            input,textarea{
+                background: none;
+                border: none !important;
+                outline: none;
+                margin: 5px 0;
+                width: 100%;
+                color: $light;
+            }
+            &.btn{
+                display: flex;
+                flex-direction: row !important;
+                justify-content: center;
+                align-items: center;
+                button{
+                    margin: 0 10px;
+                    color: $light;
+                    background: $p;
+                    &:hover {
+                      background-color: $s;
+                      color: #fff;
+                    }
+                    
+                    outline: none;
+                    border: none;
+                    padding: 10px;
+                    text-align: center;
+                    font-weight: 600;
+                    width: 150px;
+                    margin-top: 10px;
+                    border-radius: 33px;
+                    -webkit-box-shadow: 10px 10px 21px 0px rgba(0, 0, 0, 0.75);
+                    -moz-box-shadow: 10px 10px 21px 0px rgba(0, 0, 0, 0.75);
+                    box-shadow: 10px 10px 21px 0px rgba(0, 0, 0, 0.75);
+                    text-transform: uppercase;
+                    cursor: pointer;
+                    &.reset{
+                        background: $google;
+                        &:hover{
+                            background: darken($google, 10%);
+                        }
+                    }
+                }
+            }
+            h1{
+                text-align: center;
+            }
+        }
+    }
+}
