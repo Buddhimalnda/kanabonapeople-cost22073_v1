@@ -44,7 +44,7 @@
 .left-nav .logo:hover {
   background: #fff;
 }
-.left-nav a {
+.left-nav a, .left-nav button {
   color: rgb(33, 197, 66);
   width: 250px;
   font-size: 14px;
@@ -52,7 +52,7 @@
   padding: 10px;
   align-items: center;
 }
-.left-nav a i {
+.left-nav a i, .left-nav button i {
   position: relative;
   top: 9px;
   left: 15px;
@@ -61,11 +61,11 @@
   font-size: 20px;
   text-align: center;
 }
-.left-nav a .nav-item {
+.left-nav a .nav-item, .left-nav button .nav-item {
   position: relative;
   margin-left: 30px;
 }
-.left-nav a:hover {
+.left-nav a:hover, .left-nav button:hover {
   background: #01bb1d;
   color: #fff;
 }
@@ -73,18 +73,11 @@
   position: absolute;
   bottom: 0;
 }
-.left-nav footer form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 10px;
-  width: 100%;
-}
-.left-nav footer form button {
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid rgb(33, 197, 66);
-  background: rgb(33, 197, 66);
-  color: #fff;
+.left-nav footer button {
+  color: red;
   cursor: pointer;
+}
+.left-nav footer button:hover {
+  background-color: red;
+  color: #fff;
 }/*# sourceMappingURL=left.nav.style.css.map */

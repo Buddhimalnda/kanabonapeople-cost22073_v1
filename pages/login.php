@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <?php 
+   <?php 
         // include "../php/session.php";
         include "../php/header.php";
         // include "../php/config.php";
@@ -10,61 +10,75 @@
         <link rel="stylesheet" href="../assets/styles/login.css">
     </head>
     
-<body class="login">
-    <div class="row">
-        <div class="col l">
-            <form action="scripts/login.php" method="post">
-                <h1>Login</h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio, voluptates? Adipisci esse accusantium,
-                    explicabo incidunt harum aliquid placeat</p>
-                <div class="group input">
-                    <label for="intTFUName">User Name</label>
-                    <div class="icon"><i class="fa fa-user-secret"></i></div>
-                    <input type="text" id="intTFUName" placeholder="User Name" name="username" >
-                </div>
-                <div class="group input">
-                    <label for="intTFPasswd">Password</label>
-                    <div class="icon"><i class="fa fa-key"></i></div>
-                    <input type="text" id="intTFPasswd" placeholder="Password" name="password">
-                </div>
-                <div class="group">
-                    <button class="btn" type="submit">
-                        Login
-                    </button>
-                </div>
-                <div class="group">
-                    <div class="re-me">
-                        <input type="checkbox"> <span>Remember me</span>
-                    </div>
-                    <div class="rest-pw">
-                        <a href="">forget password</a>
-                    </div>
-                </div>
-                <div class="group hr"></div>
-        
-                <div class="group social">
-                    <div class="social">
-                        <div class="icon google">
-                            <i class="fa fa-google"></i>
-                        </div>
-                        <div class="icon facebook">
-                            <i class="fa fa-facebook"></i>
-                        </div>
-                        <div class="icon twitter">
-                            <i class="fa fa-twitter"></i>
-                        </div>
-                    </div>
-                </div>
-            </form>
-        </div>
-        <div class="col r">
-            <h1>Welocome</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque laudantium nam blanditiis sapiente, at asperiores deleniti rem, iste voluptatem quod, sit aliquid saepe voluptas error itaque beatae quas dolore. Voluptates?</p>
-            <p>haven't account?.. <br> Please follow this.</p>
-            <div class="btn">Sign up</div>
-        </div>
-    </div>
-    <script src="https://kit.fontawesome.com/d1c69586b9.js" crossorigin="anonymous"></script>
 
+<div class="container" id="container">
+	<div class="form-container sign-up-container">
+		<form action="scripts/signup.php" method="post">
+			<h1>Create Account</h1>
+			
+			<input type="text" placeholder="User Name" name="username" required/>
+			<input type="email" placeholder="Email" name="email" required/>
+			<input type="text" placeholder="Telephone Number" name="number" required/>
+			<input type="password" placeholder="Password" name="password" required/>
+			
+			<button>Sign Up</button>
+            <span>or Sign Up with... </span>
+            <div class="social-container">
+				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+			</div>
+		</form>
+	</div>
+	<div class="form-container sign-in-container">
+		<form action="scripts/login.php" method="post">
+			<h1>Sign in</h1>
+			
+			<input type="text" placeholder="User Name" name="username" required/>
+			<input type="password" placeholder="Password" name="password" required/>
+			<a href="#">Forgot your password?</a>
+			<button>Sign In</button>
+            <span>or use your account</span>
+            <div class="social-container">
+				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+			</div>
+			
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<h1>Welcome !</h1>
+				<h5>Enter your details and join with us..!</h5>
+                <p>Already have account?</p>
+				<button class="ghost" id="signIn">Sign In</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+				<h1>Welcome Back!</h1>
+				<h5>to <br>KanaBona Peoples</h5>
+                <p>Not a User ?</p>
+				<button class="ghost" id="signUp">Sign Up</button>
+			</div>
+		</div>
+	</div>
+</div>
+    
+
+    <script src="https://kit.fontawesome.com/d1c69586b9.js" crossorigin="anonymous"></script>
+    <script>
+        const signUpButton = document.getElementById('signUp');
+const signInButton = document.getElementById('signIn');
+const container = document.getElementById('container');
+
+signUpButton.addEventListener('click', () => {
+	container.classList.add("right-panel-active");
+});
+
+signInButton.addEventListener('click', () => {
+	container.classList.remove("right-panel-active");
+});
+    </script>
 </body>
 </html>
