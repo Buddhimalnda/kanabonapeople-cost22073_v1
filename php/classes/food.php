@@ -102,7 +102,6 @@ class Food
         $description = $this->getDescription();
         $image = $this->getImage();
         $metadata = $this->getMetadata();
-        
         $sql = "INSERT INTO food (name, price, description, image, metadata) VALUES ('$name', '$price', '$description', '$image', '$metadata')";
         $result = mysqli_query($this->db, $sql);
         if ($result) {

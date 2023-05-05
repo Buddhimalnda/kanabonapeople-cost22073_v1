@@ -255,4 +255,10 @@ li {
 .title {
   font-size: 1.5rem;
   color: #4B4B4B;
+}
+
+.gallery-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }/*# sourceMappingURL=resturent.style.css.map */

@@ -54,7 +54,7 @@ class Restaurant {
         $this->image = filter_var($image, FILTER_SANITIZE_STRING);
     }
     public function setMetadata($metadata) {
-        $this->metadata = filter_var($metadata, FILTER_SANITIZE_STRING);
+        $this->metadata = $metadata;
     }
     /*
     //sql code create this table
@@ -78,6 +78,7 @@ public function setRestaurant($name, $address, $description, $image, $metadata)
     $this->setName($name);
     $this->setAddress($address);
     $this->setDescription($description);
+    $this->setImage($image);
     $this->setMetadata($metadata);
     
 }
