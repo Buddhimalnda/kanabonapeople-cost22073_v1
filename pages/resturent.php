@@ -17,12 +17,13 @@ $resturant = new Restaurant($db->connect(), $id);
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <?php
   $name = $resturant->getName();
-  echo "<title>Resturent | $name</title>";
+  echo "<title>Restaurant | $name</title>";
   ?>
   <link rel="stylesheet" href="../assets/styles/resturent.style.css">
 </head>
 
 <body>
+  <h1>About</h1>
   <?php
   $img = $resturant->getImage();
   ?>
@@ -32,26 +33,23 @@ $resturant = new Restaurant($db->connect(), $id);
       <?php echo "<img class='left' src='$img'>"; ?>
     </div>
     <div class="right">
-      <h1>
+      <h2>
         <?php echo $resturant->getName();?>
-      </h1>
-      <div class="author"><img src="https://randomuser.me/api/portraits/men/95.jpg">
-        <h2>Igor MARTY</h2>
-      </div>
+      </h2>
+      
       <div class="separator"></div>
       <p><?php echo $resturant->getDescription();?></p>
+      <div class="scroll">
+        <a href="#map">Map</a>
+        <a href="#gallery">Gallery</a>
+      </div>
+
     </div>
-    <h5>12</h5>
-    <h6>JANUARY</h6>
-    <ul>
-      <li><i class="fa fa-eye fa-2x"></i></li>
-      <li><i class="fa fa-heart-o fa-2x"></i></li>
-      <li><i class="fa fa-envelope-o fa-2x"></i></li>
-      <li><i class="fa fa-share-alt fa-2x"></i></li>
-    </ul>
-    <div class="fab"><i class="fa fa-arrow-down fa-3x"> </i></div>
+    
   </div>
   <div class="map">
+    <a name="map"></a>
+    <h1>Location</h1>
       <?php 
         $map = $resturant->getMetadata();
         // $map = $json->iframe;
@@ -62,8 +60,10 @@ $resturant = new Restaurant($db->connect(), $id);
       <!--  -->
     </div>
     
+    <h1>Gallery</h1>
+    <a name="gallery"></a>
     <div class="gallery-title">
-      <h1>Restutrent Gallery</h1>
+    
       <?php
       $name = $_GET['user'];
       if($name=="admin"){
@@ -82,6 +82,7 @@ $resturant = new Restaurant($db->connect(), $id);
       ?>
     </div>
   <div class="gallery" id="gallery">
+    
   <?php
     $title = "gallery";
 

@@ -44,7 +44,7 @@ $db = new DB_CONNECT();
         </div>
         <div class="hr"></div>
 
-        <div class="cooming-soon">
+        <div class="comming-soon">
             <h1>Comming Soon...!</h1>
             <h2>Be Right Back</h2>
         </div>

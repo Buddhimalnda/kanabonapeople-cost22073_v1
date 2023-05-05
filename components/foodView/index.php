@@ -1,3 +1,7 @@
+<head>
+    <link rel="stylesheet" href="\assets\styles\style.css">
+</head>
+
 <div class="foods">
     <div class="title">
         <h1>Foods List</h1>
@@ -42,17 +46,19 @@
                         </p>
                     </div>
                     <div class="card__info--price">
-                        <p>Rs.
+                        <h6>Rs.
                             <?php echo $food->getPrice(); ?>
-                        </p>
+                        </h6>
+                        <div class="rating">
                         <span class="fa fa-star checked"></span>
                         <span class="fa fa-star checked"></span>
                         <span class="fa fa-star checked"></span>
                         <span class="fa fa-star checked"></span>
                         <span class="fa fa-star checked"></span>
+                        </div>
                     </div>
                     <div class="add-cart">
-                        <?php echo "<button onClick={myFunction()} ><i class='fa fa-cart-shopping'></i></i> order</button>" ?>
+                        <?php echo "<button onClick={myFunction()} ><i class='fa fa-cart-shopping'></i></i> Order</button>" ?>
                         <script>
                             function myFunction() {
                                 location.href = '/app/commingsoon.php';
