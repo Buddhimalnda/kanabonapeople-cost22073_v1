@@ -98,7 +98,7 @@ if($_SESSION['login']){
                         </div>
                         <div class="profile-img">
                         <?php 
-                        $img = $user->getImg();
+                        $img = !empty($user->getImg()) ? $user->getImg() : "https://xsgames.co/randomusers/avatar.php?g=pixel";//
                         echo "<img src=$img alt='pp'>";
                         ?>
                             
