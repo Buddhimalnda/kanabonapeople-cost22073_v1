@@ -55,7 +55,7 @@
                         <?php echo "<button onClick={myFunction()} ><i class='fa fa-cart-shopping'></i></i> order</button>" ?>
                         <script>
                             function myFunction() {
-                                location.href = './test-components/food-order.html';
+                                location.href = '/app/commingsoon.php';
                             }
                         </script>
                     </div>
