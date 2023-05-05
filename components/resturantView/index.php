@@ -42,7 +42,7 @@
                     </p>
                     <?php
                     $id = $resturent->getId();
-                    echo "<a class='details' href='pages/resturent.php?id=$id' target='_blank' rel='noopener noreferrer'> " ?>
+                    echo "<a class='details' href='pages/resturent.php?id=$id&user=$name' target='_blank' rel='noopener noreferrer'>" ?>
                     <h3 class="">
                         More details
                     </h3>

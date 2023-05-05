@@ -2,8 +2,11 @@
 $id = $_GET['id'];
 include '..\php\connect.php';
 include '..\php\classes\resturant.php';
+include '..\php\classes\user.php';
 $db = new DB_CONNECT();
 $resturant = new Restaurant($db->connect(), $id);
+
+// echo "<script>console.log('$name');</script>";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -56,17 +59,35 @@ $resturant = new Restaurant($db->connect(), $id);
         echo "$map";
         // echo "<script> console.log($json)  </script>";
       ?>
-      <iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126757.67791408818!2d79.85526720646992!3d6.869330816424121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2595fdbd5dd21%3A0x3a6aea27ffd9bc52!2sMarino%20Beach%20Colombo!5e0!3m2!1sen!2slk!4v1682972567596!5m2!1sen!2slk' width='600' height='450' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>
+      <!--  -->
     </div>
-  <h1 class="title">Restutrent Gallery</h1>
+    
+    <div class="gallery-title">
+      <h1>Restutrent Gallery</h1>
+      <?php
+      $name = $_GET['user'];
+      if($name=="admin"){
+        echo "
+        <div class='icons'>
+          <a class='nomal' href='admin/addResturantGallery.php?res_id=$id'>
+              <i class='fa fa-pen-to-square'></i>
+          </a>
+          <a class='nomal' href=''>
+              <i class='fa-solid fa-eye'></i>
+          </a>
+        </div>
+        ";
+      }
 
+      ?>
+    </div>
   <div class="gallery" id="gallery">
   <?php
     $title = "gallery";
 
 
     // $imgs = array();
-    $sql = "SELECT * FROM restutent_gallery";
+    $sql = "SELECT * FROM restutent_gallery WHERE res_id='$id' ";
     $result = mysqli_query($db->connect(), $sql);
     // $row = mysqli_fetch_array($result);
 

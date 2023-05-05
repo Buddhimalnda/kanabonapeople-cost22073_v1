@@ -5,12 +5,12 @@ $name = $_POST['name'];
 $description = $_POST['description'];
 $price = $_POST['price'];
 $image = $_POST['image'];
-$category = $_POST['category'];
-$resturant = $_POST['resturant'];
+// $category = $_POST['category'];
+// $resturant = $_POST['resturant'];
 
 $db = new DB_CONNECT();
 $food = new Food($db->connect(), false);
-if ($food->setFood($name,  $price, $description, $image, $category)) {
+$food->setFood($name,  $price, $description, $image, "");
     // $sql = "INSERT INTO food_resturant(`f_id`, `res_id`) VALUES (,'$resturant')";
     // $result = mysqli_query($db->connect(), $sql);
     // if ($result) {
@@ -21,9 +21,6 @@ if ($food->setFood($name,  $price, $description, $image, $category)) {
     if ($food->addFoodWithThis()){
         echo "Food added successfully";
     }else {
-        echo "Failed to add food";
+        echo "Failed to add food 1";
     }
-} else {
-    echo "Failed to add food";
-}
 ?>
