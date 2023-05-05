@@ -8,7 +8,7 @@
                     <a class='nomal' href='pages/admin/addResturant.htm'>
                         <i class='fa fa-pen-to-square'></i>
                     </a>
-                    <a class='nomal' href=''>
+                    <a class='nomal' href='resturentlist.php'>
                         <i class='fa-solid fa-eye'></i>
                     </a>
                 </div>

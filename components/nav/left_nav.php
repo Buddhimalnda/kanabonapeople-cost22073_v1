@@ -10,23 +10,23 @@
                 <span>KanaBona Peoples</span>
             </a>
         </li>
-        <li><a href="#">
+        <li><a href="/app">
                 <i class="fas fa-home"></i>
                 <span class="nav-item">Home</span>
             </a></li>
-        <li><a href="#">
+        <li><a href="/app/foodlist.php">
                 <i class="fa-solid fa-utensils"></i>
                 <span class="nav-item">Food</span>
             </a></li>
-        <li><a href="#">
+        <li><a href="/app/resturentlist.php">
                 <i class="fas fa-shop"></i>
                 <span class="nav-item">Restaurant</span>
             </a></li>
-        <li><a href="#">
+        <li class="inactive"><a href="/app/commingsoon.php">
                <i class="fa-solid fa-file-invoice-dollar"></i>
                 <span class="nav-item">Order</span>
             </a></li>
-        <li><a href="#">
+        <li class="inactive"><a href="/app/commingsoon.php">
                 <i class="fas fa-users"></i>
                 <span class="nav-item">Users</span>
             </a></li>
