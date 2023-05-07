@@ -6,33 +6,35 @@
   align-items: center;
 }
 .container .panel {
-  width: 600px;
+  width: 500px;
   height: 600px;
   padding: 5px;
-  background: #82d305;
+  background: #e1ebfe;
   border-radius: 10px;
-  padding: 20px;
+  padding: 25px;
   position: relative;
   box-shadow: 10px 10px 31px -3px rgba(0, 0, 0, 0.75);
+  font-family: Poppins, sans-serif;
 }
 .container .panel .group {
-  margin: 5px 0px;
+  margin: 5px 20px;
   display: flex;
   flex-direction: column;
   justify-content: start;
-  color: #f2f3f4;
 }
-.container .panel .group.inp {
-  padding: 10px 0px;
-  border-bottom: 1px solid #f2f3f4;
+.container .panel .group label {
+  color: #3c3c3c;
+  font-weight: bold;
 }
 .container .panel .group input, .container .panel .group textarea {
-  background: none;
-  border: none !important;
+  background-color: #e5f0fb;
+  border: 2px solid #1b9bea;
   outline: none;
-  margin: 5px 0;
+  padding: 10px 10px;
+  border-radius: 15px;
+  margin: 10px 0px;
   width: 100%;
-  color: #f2f3f4;
+  color: #141414;
 }
 .container .panel .group.btn {
   display: flex;
@@ -41,9 +43,9 @@
   align-items: center;
 }
 .container .panel .group.btn button {
-  margin: 0 10px;
+  margin: 0 20px;
   color: #f2f3f4;
-  background: #82d305;
+  background: #098b3d;
   outline: none;
   border: none;
   padding: 10px;
@@ -68,4 +70,6 @@
 }
 .container .panel .group h1 {
   text-align: center;
+  color: #3c3c3c;
+  margin-bottom: 10px;
 }/*# sourceMappingURL=add.style.css.map */

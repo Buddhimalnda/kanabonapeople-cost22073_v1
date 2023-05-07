@@ -20,35 +20,41 @@ $google: #ea4335;
         // display: flex;
         // justify-content: center;
         // align-items: center;
-        width: 600px;
+        width: 500px;
         height: 600px;
         padding: 5px;
-        background: $p;
+        background: #e1ebfe;
         border-radius: 10px;
-        padding: 20px;
+        padding: 25px;
         position: relative;
         -webkit-box-shadow: 10px 10px 31px -3px rgba(0, 0, 0, 0.75);
         -moz-box-shadow: 10px 10px 31px -3px rgba(0, 0, 0, 0.75);
         box-shadow: 10px 10px 31px -3px rgba(0, 0, 0, 0.75);
-    
+        font-family: Poppins, sans-serif;
         .group{
-            margin: 5px 0px;
+            margin: 5px 20px;
             display: flex;
             flex-direction: column;
             justify-content: start;
-            color: $light;
-            // align-items: center;
-            &.inp{
-                padding: 10px 0px;
-                border-bottom: 1px solid $light;
+            
+
+            label{
+                color: #3c3c3c;
+                font-weight: bold;
             }
+            
+            // align-items: center;
+            
             input,textarea{
-                background: none;
-                border: none !important;
+                background-color:#e5f0fb ;
+                border: 2px solid #1b9bea;
                 outline: none;
-                margin: 5px 0;
+                padding: 10px 10px;
+                border-radius: 15px;
+                margin: 10px 0px;
                 width: 100%;
-                color: $light;
+                color: #141414;
+                
             }
             &.btn{
                 display: flex;
@@ -56,9 +62,9 @@ $google: #ea4335;
                 justify-content: center;
                 align-items: center;
                 button{
-                    margin: 0 10px;
+                    margin: 0 20px;
                     color: $light;
-                    background: $p;
+                    background: #098b3d;
                     &:hover {
                       background-color: $s;
                       color: #fff;
@@ -87,6 +93,8 @@ $google: #ea4335;
             }
             h1{
                 text-align: center;
+                color: #3c3c3c;
+                margin-bottom: 10px;
             }
         }
     }
