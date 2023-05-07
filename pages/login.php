@@ -4,6 +4,22 @@
         // include "../php/session.php";
         include "../php/header.php";
         // include "../php/config.php";
+		$error = 0;
+		$username = "";
+		if(isset($_GET['error'])){
+			$error = $_GET['error'];
+		}
+		if(isset($_GET['username'])){
+			$username = $_GET['username'];
+		}
+		if ($error==1) {
+			echo "<script>alert('Invalid Username or Password');</script>";
+		}else if ($error==2) {
+			echo "<script>alert('Registation unsuccesful..!');</script>";
+		}
+		else if ($error==3) {
+			echo "<script>alert('mobile number is wrone pleas try again');</script>";
+		}
     ?>
     <head>
         <title>Login</title>
@@ -34,8 +50,11 @@
 		<form action="scripts/login.php" method="post">
 			<h1>Sign in</h1>
 			
-			<input type="text" placeholder="User Name" name="username" required/>
-			<input type="password" placeholder="Password" name="password" required/>
+			<?php 
+			echo "<input type='text' placeholder='User Name' name='username' required value='$username'/>";
+			?>
+			<input type="password" placeholder="" name="password" required/>
+			
 			<a href="#">Forgot your password?</a>
 			<button>Sign In</button>
             <span>or use your account</span>

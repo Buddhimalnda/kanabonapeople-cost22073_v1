@@ -18,5 +18,6 @@
     }
     else{
         echo "failed";
+        header('location: /app/pages/login.php?error=1');
     }
 ?>

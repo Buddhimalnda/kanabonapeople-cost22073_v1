@@ -25,7 +25,7 @@ $resturant = new Restaurant($db->connect(), $r_id);
             <form action='resturantGallery.php?res_id=$r_id' method='post'>
             "; ?>    
             <div class="group">
-                    <h1>Resturant Add  </h1>
+                    <h1>Add Image</h1>
                 </div>
                 <div class="group inp">
                     <label for="">Resturant Name</label>
@@ -34,11 +34,11 @@ $resturant = new Restaurant($db->connect(), $r_id);
                 </div>
                 <div class="group inp">
                     <label for="">Resturant Title</label>
-                    <input type="text" name="name" id="img" placeholder="Food title">
+                    <input type="text" name="name" id="img" placeholder="Image title">
                 </div>
                 <div class="group inp">
-                    <label for="">Resturant Image</label>
-                    <input type="text" name="link" id="img" placeholder="Food Image">
+                    <label for="">Resturant Image <span style="font-size: 10px;">(please follow the Guidelines)</span></label>
+                    <input type="text" name="link" id="img" placeholder="Image">
                 </div>
                 <div class="group btn">
                     <button type="reset" class="reset">Reset</button>
