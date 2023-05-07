@@ -20,6 +20,8 @@ $food->setFood($name,  $price, $description, $image, "");
     // }
     if ($food->addFoodWithThis()){
         echo "Food added successfully";
+        header('Location: ' . $_SERVER['HTTP_REFERER']);
+
     }else {
         echo "Failed to add food 1";
     }

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php
-$title = "Home";
+$title = "Resturant List";
 include "php/session.php";
 include "php/connect.php";
 include "php/classes/food.php";

@@ -19,7 +19,33 @@ $resturant->setRestaurant($name,  $address, $description, $image, $map);
     //     // return false;
     // }
 if ($resturant->addRestaurantWithThis()){
-    echo "Food added successfully";
+    echo "Restaurant added successfully";
+    echo "
+    <div class='alert'>
+
+        <div class='toast active'>
+      
+            <div class='toast-content'>
+              <i class='fas fa-solid fa-check check'></i>
+          
+              <div class='message'>
+                <span class='text text-1'>Success</span>
+                <span class='text text-2'>Your changes has been saved</span>
+              </div>
+            </div>
+            <i class='fa-solid fa-xmark close'></i>
+          
+            <!-- Remove 'active' class, this is just to show in Codepen thumbnail -->
+            <div class='progress active'></div>
+          </div>
+          
+          <button>Show Toast</button>
+          
+          </div>
+          <script src='../../assets/js/alert.js'></script>
+    ";
+    header('Location: ' . $_SERVER['HTTP_REFERER']);
+
 }else {
     echo "Failed to add food";
 }

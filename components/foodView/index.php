@@ -24,7 +24,11 @@
         <?php
         $f = new Food($db->connect(), false);
         $foods = $f->getAllFood();
-        for ($i = 0; $i < count($foods); $i++) {
+        $count = count($foods);
+        if($title === 'Home'){
+            $count = 3;
+        }
+        for ($i = 0; $i < $count; $i++) {
             ?>
             <div class="card">
                 <?php

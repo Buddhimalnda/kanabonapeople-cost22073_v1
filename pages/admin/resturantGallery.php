@@ -10,7 +10,8 @@ $db = new DB_CONNECT();
 $sql = "INSERT INTO`restutent_gallery`(`res_id`, `img`, `title`) VALUES ('$res_id', '$link', '$name')";
 $result = mysqli_query($db->connect(), $sql);
 if ($result) {
-    echo "success..!";
+   
+    header('Location: ' . $_SERVER['HTTP_REFERER']);
 } else {
     echo "Failed..!";
 }

@@ -1,6 +1,6 @@
 <div class="resturent">
     <div class="title">
-        <h1>Resturent List</h1>
+        <h1>Restaurant List</h1>
         <?php
         if ($user->getType() === 'admin') {
             echo "
